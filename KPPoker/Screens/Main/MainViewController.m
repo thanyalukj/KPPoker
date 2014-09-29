@@ -38,11 +38,12 @@
     [_presenter viewDidLoad];
     [self configureCollectionView];
     [self configureTabBar];
+    [self reloadCard];
 }
 
-- (void)configureTabBar {
-    self.tabBar.delegate = self;
-    [self.tabBar setSelectedItem:(self.tabBar.items)[(NSUInteger)_presenter.currentDeckType]];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self reloadTabBar];
 }
 
 - (void)configureCollectionView {
@@ -52,13 +53,19 @@
 
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+}
 
-    [self reloadCard];
+- (void)configureTabBar {
+    self.tabBar.delegate = self;
 }
 
 - (void)reloadCard {
     [self updateCollectionViewLayout];
     [self.collectionView reloadData];
+}
+
+- (void)reloadTabBar {
+    [self.tabBar setSelectedItem:(self.tabBar.items)[(NSUInteger)_presenter.currentDeckType]];
 }
 
 - (void)updateCollectionViewLayout {
@@ -82,20 +89,28 @@
         itemSize = CGSizeMake(70, 90);
     } else if ([[UIScreen mainScreen] bounds].size.height == 667) {
         itemSize = CGSizeMake(90, 110);
+    } else if ([[UIScreen mainScreen] bounds].size.height == 736) {
+        itemSize = CGSizeMake(100, 120);
     }
     return itemSize;
 }
 
 - (CGSize)collectionViewHeaderSize {
-    CGFloat headerHeight = 6;
-    if (_presenter.currentDeckType == DeckTypeTShirt) {
-        headerHeight = 60;
-        return CGSizeMake(0, headerHeight);
-    }
-    if ([[UIScreen mainScreen] bounds].size.height == 480) {
-        headerHeight = 10;
-    }
-    return CGSizeMake(0, headerHeight);
+    CGSize itemSize = [self collectionViewItemSize];
+    UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
+    CGFloat spacing = collectionViewLayout.minimumLineSpacing;
+    NSLog(@"%f", [self collectionViewNumberOfRows]);
+    CGFloat collectionViewHeight = 2*spacing + (itemSize.height+spacing) * [self collectionViewNumberOfRows];
+    CGFloat viewHeight = self.view.bounds.size.height - self.tabBar.bounds.size.height;
+    return CGSizeMake(0, ((viewHeight - collectionViewHeight)/2));
+}
+
+- (CGFloat)collectionViewNumberOfRows {
+    CGSize itemSize = [self collectionViewItemSize];
+    UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
+    CGFloat spacing = collectionViewLayout.minimumInteritemSpacing;
+    CGFloat numberOfCellsPerRow = (NSUInteger) (self.view.bounds.size.width - 2*spacing)/ (NSUInteger) (itemSize.width + spacing);
+    return ceilf([_presenter.currentDeck numberOfCards] / numberOfCellsPerRow);
 }
 
 #pragma mark - Collection View

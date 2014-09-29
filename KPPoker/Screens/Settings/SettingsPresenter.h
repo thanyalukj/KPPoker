@@ -13,4 +13,6 @@
 @property (nonatomic) NSArray *settingGroups;
 
 - (SettingGroupItem *)groupItemAtIndex:(NSInteger)index;
+
+- (void)viewDismissed;
 @end

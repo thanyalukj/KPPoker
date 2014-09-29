@@ -4,6 +4,8 @@
 //
 
 #import "UserItem.h"
+#import "Configuration.h"
+#import "Settings.h"
 
 
 @implementation UserItem
@@ -12,9 +14,14 @@
     self = [super init];
     if (self) {
         self.label = @"User";
-        self.value = [[UIDevice currentDevice] name];
+        self.value = [Configuration instance].settings.userName;
     }
     return self;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [super textFieldDidEndEditing:textField];
+    [Configuration instance].settings.userName = self.value;
 }
 
 @end

@@ -25,7 +25,7 @@
     _presenter = [[SettingsPresenter alloc] init];
 
     [self configureNavigationBar];
-    [self configureTableView];
+    [self.tableView reloadData];
 }
 
 - (void)configureNavigationBar {
@@ -33,13 +33,8 @@
     self.navigationItem.rightBarButtonItem = doneButton;
 }
 
-- (void)configureTableView {
-    UINib *cellNib = [UINib nibWithNibName:@"SettingTableViewCell" bundle:nil];
-    [self.tableView registerNib:cellNib forCellReuseIdentifier:@"settingCell"];
-    [self.tableView reloadData];
-}
-
 - (void)dismissView:(id)sender {
+    [_presenter viewDismissed];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 

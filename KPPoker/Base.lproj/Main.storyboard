@@ -30,7 +30,7 @@
                                     <tabBarItem title="Settings" id="Fvf-Wj-FBw"/>
                                 </items>
                             </tabBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-rC-uNS">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-rC-uNS">
                                 <rect key="frame" x="16" y="64" width="568" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="PCc-Qa-aqz">
@@ -112,6 +112,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="1xf-j2-0eo" appends="YES" id="tyW-Es-WVe"/>
+                            <outletCollection property="gestureRecognizers" destination="qdC-lr-gT6" appends="YES" id="65m-oY-pb4"/>
                         </connections>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -125,6 +126,11 @@
                         <segue destination="Qxl-DI-62S" kind="custom" customClass="DismissSegue" id="9dL-1L-8yx"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer id="qdC-lr-gT6">
+                    <connections>
+                        <segue destination="Qxl-DI-62S" kind="custom" customClass="DismissSegue" id="XiM-fi-J3h"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1403" y="-457"/>
         </scene>
@@ -137,10 +143,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0aS-jG-1Mf" customClass="SettingTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" textLabel="MBg-Vn-h0l" style="IBUITableViewCellStyleDefault" id="0aS-jG-1Mf">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0aS-jG-1Mf" id="0DE-ho-Yra">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MBg-Vn-h0l">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

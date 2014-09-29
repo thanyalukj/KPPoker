@@ -6,6 +6,7 @@
 #import "MainPresenter.h"
 #import "Deck.h"
 #import "Viewing.h"
+#import "Configuration.h"
 
 @interface MainPresenter ()
 @property (nonatomic) Deck *standardDeck;
@@ -32,7 +33,7 @@
 }
 
 - (void)viewDidLoad {
-    self.currentDeck = [self savedDeck];
+    self.currentDeck = [Configuration instance].selectedDeck;
     if (!self.currentDeck) {
         self.currentDeck = self.standardDeck;
     }
@@ -40,17 +41,7 @@
 
 - (void)setCurrentDeck:(Deck *)currentDeck {
     _currentDeck = currentDeck;
-    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_currentDeck] forKey:@"savedDeck"];
-}
-
-- (Deck *)savedDeck {
-    NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
-    NSData *savedDeckData = [currentDefaults objectForKey:@"savedDeck"];
-    Deck *deck = nil;
-    if (savedDeckData != nil) {
-        deck = [NSKeyedUnarchiver unarchiveObjectWithData:savedDeckData];
-    }
-    return deck;
+    [Configuration instance].selectedDeck = currentDeck;
 }
 
 - (void)selectDeckType:(NSInteger)deckIndex {

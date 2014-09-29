@@ -4,6 +4,8 @@
 //
 
 #import "SessionItem.h"
+#import "Configuration.h"
+#import "Settings.h"
 
 
 @implementation SessionItem
@@ -12,7 +14,7 @@
     self = [super init];
     if (self) {
         self.label = @"Session Id";
-        self.value = @"";
+        self.value = [Configuration instance].settings.sessionId;
     }
     return self;
 }
@@ -20,9 +22,14 @@
 - (UIView *)accessoryViewWithTableWidth:(CGFloat)width {
     if (!self.textField) {
         self.textField = (UITextField *)[super accessoryViewWithTableWidth:width];
-        self.textField.keyboardType = UIKeyboardTypeDecimalPad;
+        self.textField.keyboardType = UIKeyboardTypeNumberPad;
     }
     return self.textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [super textFieldDidEndEditing:textField];
+    [Configuration instance].settings.sessionId = self.value;
 }
 
 @end

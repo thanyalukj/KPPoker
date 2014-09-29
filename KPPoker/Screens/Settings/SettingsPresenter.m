@@ -7,6 +7,7 @@
 #import "SessionItem.h"
 #import "UserItem.h"
 #import "SettingGroupItem.h"
+#import "Configuration.h"
 
 
 @implementation SettingsPresenter {
@@ -34,6 +35,10 @@
 
 - (SettingGroupItem *)groupItemAtIndex:(NSInteger)index {
     return (SettingGroupItem *)self.settingGroups[(NSUInteger)index];
+}
+
+- (void)viewDismissed {
+    [[Configuration instance] saveSettings];
 }
 
 @end

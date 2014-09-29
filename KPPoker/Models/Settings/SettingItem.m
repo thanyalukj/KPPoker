@@ -10,8 +10,8 @@
 
 - (UIView *)accessoryViewWithTableWidth:(CGFloat)width {
     if (!self.textField) {
-        UITextField *customTextField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, width - 120, 30)];
-        customTextField.backgroundColor = [UIColor orangeColor];
+        UITextField *customTextField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, width - 150, 30)];
+        customTextField.delegate = self;
         customTextField.text = self.value;
         customTextField.keyboardType = UIKeyboardTypeAlphabet;
         customTextField.returnKeyType = UIReturnKeyDone;
@@ -19,6 +19,10 @@
         self.textField = customTextField;
     }
     return self.textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    self.value = textField.text;
 }
 
 @end

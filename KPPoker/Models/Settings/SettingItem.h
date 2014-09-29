@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SettingItem : NSObject
+@interface SettingItem : NSObject <UITextFieldDelegate>
 
 @property (nonatomic) NSString *label;
 @property (nonatomic) NSString *value;
