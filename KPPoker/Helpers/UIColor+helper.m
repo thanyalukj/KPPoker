@@ -19,9 +19,6 @@
         return [self KKGreen];
     }
     if ([@[@"3", @"100", @"shirt_xl"] containsObject:content]) {
-        return [self KKOrange];
-    }
-    if ([@[@"3", @"100", @"shirt_xl"] containsObject:content]) {
         return [self KKYellow];
     }
     if ([@[@"5", @"coffee", @"shirt_xxl"] containsObject:content]) {

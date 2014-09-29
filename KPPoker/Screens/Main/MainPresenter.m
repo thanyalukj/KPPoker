@@ -70,7 +70,7 @@
     [self.viewDelegate reloadCard];
 }
 
-- (NSInteger)currentDeckType {
+- (DeckType)currentDeckType {
     return self.currentDeck.deckType;
 }
 

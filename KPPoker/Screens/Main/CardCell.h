@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deck.h"
 
 @class Card;
 
@@ -11,5 +12,7 @@
 @interface CardCell : UICollectionViewCell
 
 @property (nonatomic) Card *card;
+
+- (void)setCard:(Card *)card deckType:(DeckType)deckType;
 
 @end

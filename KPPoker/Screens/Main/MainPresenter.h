@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Deck.h"
 
 @class Deck;
 @protocol Viewing;
@@ -17,5 +18,5 @@
 
 - (void)selectDeckType:(NSInteger)deckIndex;
 
-- (NSInteger)currentDeckType;
+- (DeckType)currentDeckType;
 @end

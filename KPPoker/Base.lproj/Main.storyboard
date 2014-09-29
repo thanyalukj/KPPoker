@@ -17,10 +17,22 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-Wt-quy">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="KyA-iU-yAu"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Standard" id="Luj-kR-wAF"/>
+                                    <tabBarItem title="Fibonacci" id="7yf-6b-EhW"/>
+                                    <tabBarItem title="T-Shirt" id="ZpF-dB-p1f"/>
+                                </items>
+                            </tabBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-rC-uNS">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="16" y="64" width="568" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="8" id="PCc-Qa-aqz">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="PCc-Qa-aqz">
                                     <size key="itemSize" width="70" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -40,31 +52,19 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-Wt-quy">
-                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="KyA-iU-yAu"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="Standard" id="Luj-kR-wAF"/>
-                                    <tabBarItem title="Fibonacci" id="7yf-6b-EhW"/>
-                                    <tabBarItem title="T-Shirt" id="ZpF-dB-p1f"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="2Lk-py-09B"/>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9Vo-jd-Dlx"/>
-                            <constraint firstItem="xZr-rC-uNS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="9hI-NO-uf3"/>
+                            <constraint firstItem="xZr-rC-uNS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9hI-NO-uf3"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="t7r-Wt-quy" secondAttribute="bottom" id="CnU-tG-zRZ"/>
-                            <constraint firstItem="t7r-Wt-quy" firstAttribute="top" secondItem="xZr-rC-uNS" secondAttribute="bottom" id="LQu-0w-GVm"/>
+                            <constraint firstItem="t7r-Wt-quy" firstAttribute="top" secondItem="xZr-rC-uNS" secondAttribute="bottom" constant="1" id="LQu-0w-GVm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t7r-Wt-quy" secondAttribute="trailing" constant="-16" id="dnq-Um-RxY"/>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="fro-7Q-Tt1"/>
                             <constraint firstItem="t7r-Wt-quy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="skD-fJ-Djy"/>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="soS-81-lSV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xZr-rC-uNS" secondAttribute="trailing" constant="-16" id="ul3-Dw-5c3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xZr-rC-uNS" secondAttribute="trailing" id="ul3-Dw-5c3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
