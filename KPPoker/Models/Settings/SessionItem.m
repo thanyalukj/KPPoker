@@ -20,9 +20,9 @@
     return self;
 }
 
-- (void)configureTextField {
-    [super configureTextField];
-    self.textField.keyboardType = UIKeyboardTypeNumberPad;
+- (void)configureTextField:(UITextField *)textField {
+    [super configureTextField:textField];
+    textField.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {

@@ -65,7 +65,7 @@
 }
 
 - (void)reloadTabBar {
-    [self.tabBar setSelectedItem:(self.tabBar.items)[(NSUInteger)_presenter.currentDeckType]];
+    [self.tabBar setSelectedItem:(self.tabBar.items)[(NSUInteger)_presenter.selectedDeckType]];
 }
 
 - (void)updateCollectionViewLayout {
@@ -76,11 +76,11 @@
 
 - (CGSize)collectionViewItemSize {
     CGSize itemSize = CGSizeMake(70, 90);
-    if (_presenter.currentDeckType == DeckTypeTShirt) {
+    if (_presenter.selectedDeckType == DeckTypeTShirt) {
         itemSize = CGSizeMake(70, 90);
     }
     if ([[UIScreen mainScreen] bounds].size.height == 480) {
-        if (_presenter.currentDeckType == DeckTypeTShirt) {
+        if (_presenter.selectedDeckType == DeckTypeTShirt) {
             itemSize = CGSizeMake(80, 100);
         } else {
             itemSize = CGSizeMake(60, 80);
@@ -110,25 +110,25 @@
     UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
     CGFloat spacing = collectionViewLayout.minimumInteritemSpacing;
     CGFloat numberOfCellsPerRow = (NSUInteger) (self.view.bounds.size.width - 2*spacing)/ (NSUInteger) (itemSize.width + spacing);
-    return ceilf([_presenter.currentDeck numberOfCards] / numberOfCellsPerRow);
+    return ceilf([_presenter.selectedDeck numberOfCards] / numberOfCellsPerRow);
 }
 
 #pragma mark - Collection View
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [_presenter.currentDeck numberOfCards];
+    return [_presenter.selectedDeck numberOfCards];
 }
 
 static NSString *cellIdentifier = @"cardCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    Card *card = [_presenter.currentDeck cardAtIndex:(NSUInteger)indexPath.row];
+    Card *card = [_presenter.selectedDeck cardAtIndex:(NSUInteger) indexPath.row];
     CardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    [cell setCard:card deckType:_presenter.currentDeckType];
+    [cell setCard:card deckType:_presenter.selectedDeckType];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    _selectedCard = [_presenter.currentDeck cardAtIndex:(NSUInteger)indexPath.row];
+    _selectedCard = [_presenter.selectedDeck cardAtIndex:(NSUInteger) indexPath.row];
     [self performSegueWithIdentifier:@"viewCard" sender:self];
 }
 
@@ -147,7 +147,7 @@ static NSString *cellIdentifier = @"cardCell";
     }
     else {
         NSUInteger selectedIndex = [self.tabBar.items indexOfObject:self.tabBar.selectedItem];
-        [_presenter selectDeckType:selectedIndex];
+        [_presenter selectDeckType:(DeckType)selectedIndex];
     }
 }
 

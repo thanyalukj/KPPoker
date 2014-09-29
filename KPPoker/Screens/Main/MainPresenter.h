@@ -12,11 +12,11 @@
 
 @interface MainPresenter : NSObject
 
-@property (nonatomic) Deck *currentDeck;
+@property (nonatomic) Deck *selectedDeck;
 @property (nonatomic, weak) id<Viewing> viewDelegate;
 - (void)viewDidLoad;
 
-- (void)selectDeckType:(NSInteger)deckIndex;
+- (void)selectDeckType:(DeckType)deckType;
+- (DeckType)selectedDeckType;
 
-- (DeckType)currentDeckType;
 @end

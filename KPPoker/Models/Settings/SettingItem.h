@@ -14,5 +14,5 @@
 @property (nonatomic) NSString *placeHolder;
 
 - (UIView *)accessoryViewWithTableWidth:(CGFloat)width;
-- (void)configureTextField;
+- (void)configureTextField:(UITextField *)textField;
 @end

@@ -24,7 +24,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _settings = [self loadSettings];
-        _selectedDeck = [self loadDeck];
+        _deck = [self loadDeck];
     }
     return self;
 }
@@ -47,6 +47,10 @@
     [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_settings] forKey:@"settings"];
 }
 
+- (void)saveSettings {
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_settings] forKey:@"settings"];
+}
+
 - (Deck *)loadDeck {
     NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
     NSData *savedDeckData = [currentDefaults objectForKey:@"deck"];
@@ -57,13 +61,9 @@
     return deck;
 }
 
-- (void)setSelectedDeck:(Deck *)selectedDeck {
-    _selectedDeck = selectedDeck;
-    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_selectedDeck] forKey:@"deck"];
-}
-
-- (void)saveSettings {
-    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_settings] forKey:@"settings"];
+- (void)setDeck:(Deck *)deck {
+    _deck = deck;
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:_deck] forKey:@"deck"];
 }
 
 @end

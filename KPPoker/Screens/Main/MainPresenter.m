@@ -33,36 +33,36 @@
 }
 
 - (void)viewDidLoad {
-    self.currentDeck = [Configuration instance].selectedDeck;
-    if (!self.currentDeck) {
-        self.currentDeck = self.standardDeck;
+    self.selectedDeck = [Configuration instance].deck;
+    if (!self.selectedDeck) {
+        self.selectedDeck = self.standardDeck;
     }
 }
 
-- (void)setCurrentDeck:(Deck *)currentDeck {
-    _currentDeck = currentDeck;
-    [Configuration instance].selectedDeck = currentDeck;
+- (void)setSelectedDeck:(Deck *)selectedDeck {
+    _selectedDeck = selectedDeck;
+    [Configuration instance].deck = selectedDeck;
 }
 
-- (void)selectDeckType:(NSInteger)deckIndex {
-    switch (deckIndex) {
+- (void)selectDeckType:(DeckType)deckType {
+    switch (deckType) {
         case DeckTypeStandard:
-            self.currentDeck = self.standardDeck;
+            self.selectedDeck = self.standardDeck;
             break;
         case DeckTypeFibonacci:
-            self.currentDeck = self.fibonacciDeck;
+            self.selectedDeck = self.fibonacciDeck;
             break;
         case DeckTypeTShirt:
-            self.currentDeck = self.tShirtDeck;
+            self.selectedDeck = self.tShirtDeck;
             break;
         default:
-            self.currentDeck = self.standardDeck;
+            self.selectedDeck = self.standardDeck;
     }
     [self.viewDelegate reloadCard];
 }
 
-- (DeckType)currentDeckType {
-    return self.currentDeck.deckType;
+- (DeckType)selectedDeckType {
+    return self.selectedDeck.deckType;
 }
 
 @end

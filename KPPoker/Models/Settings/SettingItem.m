@@ -18,12 +18,12 @@
         customTextField.returnKeyType = UIReturnKeyDone;
         customTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         self.textField = customTextField;
-        [self configureTextField];
+        [self configureTextField:self.textField];
     }
     return self.textField;
 }
 
-- (void)configureTextField {
+- (void)configureTextField:(UITextField *)textField {
 
 }
 

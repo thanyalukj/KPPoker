@@ -12,7 +12,7 @@
 @interface Configuration : NSObject
 
 @property (nonatomic) Settings *settings;
-@property (nonatomic) Deck *selectedDeck;
+@property (nonatomic) Deck *deck;
 
 + (Configuration *)instance;
 
