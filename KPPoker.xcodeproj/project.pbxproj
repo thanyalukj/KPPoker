@@ -19,6 +19,8 @@
 		9CE591B619D9615E00447DE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B519D9615E00447DE2 /* Images.xcassets */; };
 		9CE591B919D9615E00447DE2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B719D9615E00447DE2 /* LaunchScreen.xib */; };
 		9CE591C519D9615E00447DE2 /* KPPokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591C419D9615E00447DE2 /* KPPokerTests.m */; };
+		9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D119D97FB600447DE2 /* CardViewController.m */; };
+		9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D419D9819200447DE2 /* DismissSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		9CE591BE19D9615E00447DE2 /* KPPokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPPokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE591C319D9615E00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE591C419D9615E00447DE2 /* KPPokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPPokerTests.m; sourceTree = "<group>"; };
+		9CE591D019D97FB600447DE2 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		9CE591D119D97FB600447DE2 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		9CE591D319D9819200447DE2 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		9CE591D419D9819200447DE2 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3044E16B1FD841A940C80031 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				9CE591D019D97FB600447DE2 /* CardViewController.h */,
+				9CE591D119D97FB600447DE2 /* CardViewController.m */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		3044E7D886F94A0F8782B6E3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				3044E7D886F94A0F8782B6E3 /* Main */,
+				3044E16B1FD841A940C80031 /* Card */,
+				9CE591D319D9819200447DE2 /* DismissSegue.h */,
+				9CE591D419D9819200447DE2 /* DismissSegue.m */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -269,6 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */,
+				9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */,
 				9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */,
 				9CE591AB19D9615E00447DE2 /* main.m in Sources */,
 				3044EDFCD360D9616D611FF5 /* Card.m in Sources */,

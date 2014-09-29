@@ -11,6 +11,7 @@
 #import "Deck.h"
 #import "Card.h"
 #import "CardCell.h"
+#import "CardViewController.h"
 
 @interface MainViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -20,6 +21,7 @@
 
 @implementation MainViewController {
     MainPresenter *_presenter;
+    Card *_selectedCard;
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
@@ -66,8 +68,17 @@ static NSString *cellIdentifier = @"cardCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    Card *card = [_presenter.currentDeck cardAtIndex:(NSUInteger)indexPath.row];
+    _selectedCard = [_presenter.currentDeck cardAtIndex:(NSUInteger)indexPath.row];
+    [self performSegueWithIdentifier:@"viewCard" sender:self];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"viewCard"]) {
+        CardViewController *cardViewController = segue.destinationViewController;
+        cardViewController.card = _selectedCard;
+    }
+}
+
 
 #pragma mark - card type
 
