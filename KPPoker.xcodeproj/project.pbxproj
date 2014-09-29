@@ -16,9 +16,9 @@
 		3044E9687931AEEF383F0695 /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E7FAE74652E3A02E97C0 /* UserItem.m */; };
 		3044EA2628047EEC50504B05 /* SettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */; };
 		3044EA29D7584FE3F4621478 /* SettingGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E62E422B470E428F17B9 /* SettingGroupItem.m */; };
-		3044EB43D4BAD76257F450AC /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E3AD0A337610BCAEE855 /* Settings.m */; };
 		3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044EB3D1F02BE19311BD2FA /* CardCell.xib */; };
 		3044ED96B59BDEFBF9F940A4 /* SessionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC9F5554D23CCFE8EB0D /* SessionItem.m */; };
+		3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E6D6C3843514B6129C28 /* Settings.m */; };
 		3044EDFCD360D9616D611FF5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EBF8E4D9431730857EE0 /* Card.m */; };
 		3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2C0D69A061B4390B622 /* MainPresenter.m */; };
 		9CE591AB19D9615E00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AA19D9615E00447DE2 /* main.m */; };
@@ -44,12 +44,11 @@
 
 /* Begin PBXFileReference section */
 		3044E2C0D69A061B4390B622 /* MainPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPresenter.m; sourceTree = "<group>"; };
-		3044E3AD0A337610BCAEE855 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		3044E3B0D57238AE5EE78838 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPresenter.m; sourceTree = "<group>"; };
 		3044E5864764AB458CB5FC6A /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
 		3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
 		3044E62E422B470E428F17B9 /* SettingGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGroupItem.m; sourceTree = "<group>"; };
+		3044E6D6C3843514B6129C28 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		3044E7030F125451A2779074 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3044E752D66F6FC7A1AAC6DB /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		3044E763F46D66BE7D03E588 /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+helper.m"; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		3044EB0213AED886F0C77A1A /* Viewing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewing.h; sourceTree = "<group>"; };
 		3044EB3D1F02BE19311BD2FA /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		3044EBF8E4D9431730857EE0 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		3044EC968D7061CCD71A2794 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		3044EC9F5554D23CCFE8EB0D /* SessionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionItem.m; sourceTree = "<group>"; };
 		3044ED8FACE78E4A0075026A /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		3044EE37C795F77F61F22E06 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -122,6 +122,8 @@
 			children = (
 				3044EE90EC05E831BBE16E5B /* Configuration.m */,
 				3044ED8FACE78E4A0075026A /* Configuration.h */,
+				3044E6D6C3843514B6129C28 /* Settings.m */,
+				3044EC968D7061CCD71A2794 /* Settings.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -148,8 +150,6 @@
 				3044EE74AB5C42CCD577C4D1 /* UserItem.h */,
 				3044E62E422B470E428F17B9 /* SettingGroupItem.m */,
 				3044EF5175638DD30148BB81 /* SettingGroupItem.h */,
-				3044E3AD0A337610BCAEE855 /* Settings.m */,
-				3044E3B0D57238AE5EE78838 /* Settings.h */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -380,8 +380,8 @@
 				3044ED96B59BDEFBF9F940A4 /* SessionItem.m in Sources */,
 				3044E9687931AEEF383F0695 /* UserItem.m in Sources */,
 				3044EA29D7584FE3F4621478 /* SettingGroupItem.m in Sources */,
-				3044EB43D4BAD76257F450AC /* Settings.m in Sources */,
 				3044E2931554EE808501A911 /* Configuration.m in Sources */,
+				3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
