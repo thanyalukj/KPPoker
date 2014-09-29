@@ -36,8 +36,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_presenter viewDidLoad];
+    [self configureTitleView];
     [self configureCollectionView];
     [self configureSegmentedControl];
+}
+
+- (void)configureTitleView {
+    UIImage *bannerImage = [UIImage imageNamed:@"banner"];
+    UIImageView *bannerImageView = [[UIImageView alloc] initWithImage:bannerImage];
+    self.navigationItem.titleView = bannerImageView;
 }
 
 - (void)configureSegmentedControl {

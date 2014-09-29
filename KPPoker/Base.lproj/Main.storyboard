@@ -90,21 +90,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_?" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-kK-vF9">
                                 <rect key="frame" x="153" y="44" width="295" height="448"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG0-lM-NbG">
-                                <rect key="frame" x="74" y="38" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Qxl-DI-62S" kind="custom" customClass="DismissSegue" id="cpe-UX-VBt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="XcC-kK-vF9" secondAttribute="centerX" constant="-0.5" id="C6A-ab-cfg"/>
                             <constraint firstAttribute="centerY" secondItem="XcC-kK-vF9" secondAttribute="centerY" id="ZC6-vR-z6H"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1xf-j2-0eo" appends="YES" id="tyW-Es-WVe"/>
+                        </connections>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
@@ -112,8 +107,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHd-c5-mju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="1xf-j2-0eo">
+                    <connections>
+                        <segue destination="Qxl-DI-62S" kind="custom" customClass="DismissSegue" id="9dL-1L-8yx"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1737" y="-286"/>
+            <point key="canvasLocation" x="1524" y="-460"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fx4-cv-Li1">
