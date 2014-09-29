@@ -76,15 +76,15 @@
 
 - (CGSize)collectionViewItemSize {
     CGSize itemSize = CGSizeMake(70, 90);
-    if (_presenter.selectedDeckType == DeckTypeTShirt) {
-        itemSize = CGSizeMake(70, 90);
-    }
     if ([[UIScreen mainScreen] bounds].size.height == 480) {
         if (_presenter.selectedDeckType == DeckTypeTShirt) {
             itemSize = CGSizeMake(80, 100);
         } else {
             itemSize = CGSizeMake(60, 80);
         }
+    }
+    if (_presenter.selectedDeckType == DeckTypeTShirt) {
+        itemSize = CGSizeMake(70, 90);
     } else if ([[UIScreen mainScreen] bounds].size.height == 568) {
         itemSize = CGSizeMake(70, 90);
     } else if ([[UIScreen mainScreen] bounds].size.height == 667) {
