@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  KPPoker
 //
 //  Created by Thanyaluk on 29/09/2014.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Viewing.h"
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController <Viewing>
 
 
 @end
