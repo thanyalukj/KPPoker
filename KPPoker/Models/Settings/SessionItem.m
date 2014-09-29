@@ -13,18 +13,16 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.label = @"Session Id";
+        self.label = @"Session ID";
+        self.placeHolder = @"Session ID";
         self.value = [Configuration instance].settings.sessionId;
     }
     return self;
 }
 
-- (UIView *)accessoryViewWithTableWidth:(CGFloat)width {
-    if (!self.textField) {
-        self.textField = (UITextField *)[super accessoryViewWithTableWidth:width];
-        self.textField.keyboardType = UIKeyboardTypeNumberPad;
-    }
-    return self.textField;
+- (void)configureTextField {
+    [super configureTextField];
+    self.textField.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {

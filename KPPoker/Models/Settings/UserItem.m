@@ -15,6 +15,7 @@
     if (self) {
         self.label = @"User";
         self.value = [Configuration instance].settings.userName;
+        self.placeHolder = @"User name";
     }
     return self;
 }
