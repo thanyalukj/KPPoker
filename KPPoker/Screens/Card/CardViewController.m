@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *imageName = [NSString stringWithFormat:@"Card_%@", @"?"];
+    NSString *imageName = [NSString stringWithFormat:@"card_%@", self.card.content];
     self.cardImageView.image = [UIImage imageNamed:imageName];
 }
 

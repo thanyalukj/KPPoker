@@ -13,9 +13,9 @@
 #import "CardCell.h"
 #import "CardViewController.h"
 
-@interface MainViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MainViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UITabBarDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *cardTypeSegmentedControl;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBar;
 
 @end
 
@@ -37,16 +37,24 @@
     [super viewDidLoad];
     [_presenter viewDidLoad];
     [self configureCollectionView];
-    [self configureSegmentedControl];
+    [self configureTabBar];
 }
 
-- (void)configureSegmentedControl {
-    self.cardTypeSegmentedControl.selectedSegmentIndex = [_presenter currentDeckType];
+- (void)configureTabBar {
+    self.tabBar.delegate = self;
+    [self.tabBar setSelectedItem:(self.tabBar.items)[_presenter.currentDeckType]];
 }
 
 - (void)configureCollectionView {
     UINib *cellNib = [UINib nibWithNibName:@"CardCell" bundle:nil];
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"cardCell"];
+
+    UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
+    CGSize itemSize = CGSizeMake(70, 90);
+    if ([[UIScreen mainScreen] bounds].size.height == 480) {
+        itemSize = CGSizeMake(65, 80);
+    }
+    collectionViewLayout.itemSize = itemSize;
 
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -81,9 +89,9 @@ static NSString *cellIdentifier = @"cardCell";
 
 
 #pragma mark - card type
-
-- (IBAction)cardTypeChanged:(UISegmentedControl *)segmentedControl {
-    [_presenter selectDeckType:self.cardTypeSegmentedControl.selectedSegmentIndex];
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSUInteger selectedIndex = [self.tabBar.items indexOfObject:self.tabBar.selectedItem];
+    [_presenter selectDeckType:selectedIndex];
 }
 
 - (void)reloadCard {

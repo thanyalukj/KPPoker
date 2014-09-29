@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3044E009BC883B1FD741AE9B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E752D66F6FC7A1AAC6DB /* Deck.m */; };
+		3044E2662FE4F8332F6D3C44 /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E763F46D66BE7D03E588 /* UIColor+helper.m */; };
 		3044E7507344C4509EB2EE88 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */; };
 		3044E8D92FD2E699111E292C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE37C795F77F61F22E06 /* MainViewController.m */; };
 		3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044EB3D1F02BE19311BD2FA /* CardCell.xib */; };
@@ -38,7 +39,9 @@
 		3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
 		3044E7030F125451A2779074 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3044E752D66F6FC7A1AAC6DB /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		3044E763F46D66BE7D03E588 /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+helper.m"; sourceTree = "<group>"; };
 		3044E834085467470E463099 /* MainPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenter.h; sourceTree = "<group>"; };
+		3044E9F356424700A6AFB77D /* UIColor+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+helper.h"; sourceTree = "<group>"; };
 		3044EA7632F765AD4475301A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		3044EB0213AED886F0C77A1A /* Viewing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewing.h; sourceTree = "<group>"; };
 		3044EB3D1F02BE19311BD2FA /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 				9CE591D119D97FB600447DE2 /* CardViewController.m */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		3044E6BC4095F3A749454897 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3044E763F46D66BE7D03E588 /* UIColor+helper.m */,
+				3044E9F356424700A6AFB77D /* UIColor+helper.h */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3044E7D886F94A0F8782B6E3 /* Main */ = {
@@ -156,6 +168,7 @@
 				9CE591A819D9615E00447DE2 /* Supporting Files */,
 				3044EF4DDE23C6C429852BBE /* Models */,
 				3044ED1A879E0CE3213EB57D /* Screens */,
+				3044E6BC4095F3A749454897 /* Helpers */,
 			);
 			path = KPPoker;
 			sourceTree = "<group>";
@@ -296,6 +309,7 @@
 				3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */,
 				3044E8D92FD2E699111E292C /* MainViewController.m in Sources */,
 				3044E7507344C4509EB2EE88 /* CardCell.m in Sources */,
+				3044E2662FE4F8332F6D3C44 /* UIColor+helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

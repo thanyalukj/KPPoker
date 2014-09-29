@@ -45,7 +45,7 @@
         case DeckTypeFibonacci:
             return @[@"0", @"1", @"2", @"3", @"5", @"8", @"13", @"21", @"34", @"55", @"89", @"144", @"?", @"coffee"];
         case DeckTypeTShirt:
-            return @[@"XS", @"S", @"M", @"L", @"XL", @"XXL", @"?", @"coffee"];
+            return @[@"shirt_xs", @"shirt_s", @"shirt_m", @"shirt_l", @"shirt_xl", @"shirt_xxl", @"?", @"coffee"];
         default:
             return @[@"0", @"1", @"2", @"3", @"5", @"8", @"13", @"20", @"40", @"90", @"100", @"?", @"coffee"];
     }
