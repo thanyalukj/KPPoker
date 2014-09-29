@@ -22,6 +22,7 @@
 		9CE591C519D9615E00447DE2 /* KPPokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591C419D9615E00447DE2 /* KPPokerTests.m */; };
 		9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D119D97FB600447DE2 /* CardViewController.m */; };
 		9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D419D9819200447DE2 /* DismissSegue.m */; };
+		9CE5921519D9C5CD00447DE2 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		9CE591D119D97FB600447DE2 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		9CE591D319D9819200447DE2 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
 		9CE591D419D9819200447DE2 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,15 @@
 				9CE591D119D97FB600447DE2 /* CardViewController.m */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		3044E58FF3922DA2B8039FE8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */,
+				9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		3044E6BC4095F3A749454897 /* Helpers */ = {
@@ -124,6 +136,7 @@
 				3044E16B1FD841A940C80031 /* Card */,
 				9CE591D319D9819200447DE2 /* DismissSegue.h */,
 				9CE591D419D9819200447DE2 /* DismissSegue.m */,
+				3044E58FF3922DA2B8039FE8 /* Settings */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -309,6 +322,7 @@
 				3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */,
 				3044E8D92FD2E699111E292C /* MainViewController.m in Sources */,
 				3044E7507344C4509EB2EE88 /* CardCell.m in Sources */,
+				9CE5921519D9C5CD00447DE2 /* SettingsTableViewController.m in Sources */,
 				3044E2662FE4F8332F6D3C44 /* UIColor+helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

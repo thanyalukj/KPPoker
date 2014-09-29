@@ -9,22 +9,22 @@
 @implementation UIColor (helper)
 
 + (UIColor *)colorForContent:(NSString *)content {
-    if ([@[@"0", @"13", @"shirt_s"] containsObject:content]) {
+    if ([@[@"0", @"13", @"90", @"shirt_s"] containsObject:content]) {
         return [self KKPurple];
     }
-    if ([@[@"1", @"12", @"shirt_m"] containsObject:content]) {
+    if ([@[@"1", @"12", @"144", @"shirt_m"] containsObject:content]) {
         return [self KKBlue];
     }
-    if ([@[@"2", @"40", @"shirt_l"] containsObject:content]) {
+    if ([@[@"2", @"21", @"40", @"shirt_l"] containsObject:content]) {
         return [self KKGreen];
     }
-    if ([@[@"3", @"100", @"shirt_xl"] containsObject:content]) {
+    if ([@[@"3", @"34", @"100", @"shirt_xl"] containsObject:content]) {
         return [self KKYellow];
     }
-    if ([@[@"5", @"coffee", @"shirt_xxl"] containsObject:content]) {
+    if ([@[@"5", @"55", @"coffee", @"shirt_xxl"] containsObject:content]) {
         return [self KKOrange];
     }
-    if ([@[@"8", @"?", @"shirt_xs"] containsObject:content]) {
+    if ([@[@"8", @"89", @"?", @"shirt_xs"] containsObject:content]) {
         return [self KKPink];
     }
     return [self KKPurple];
