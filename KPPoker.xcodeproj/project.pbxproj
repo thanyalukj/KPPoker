@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3044E009BC883B1FD741AE9B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E752D66F6FC7A1AAC6DB /* Deck.m */; };
 		3044E2662FE4F8332F6D3C44 /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E763F46D66BE7D03E588 /* UIColor+helper.m */; };
 		3044E2931554EE808501A911 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE90EC05E831BBE16E5B /* Configuration.m */; };
+		3044E3F0EA3F62D861A7C87E /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E57AB7CED9FF50A2F7EC /* Deck.m */; };
 		3044E6591ACE0CED1A0B488E /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5864764AB458CB5FC6A /* SettingItem.m */; };
+		3044E710925207E4FDB6D358 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5C52F68DCFC194CD935 /* Card.m */; };
 		3044E7507344C4509EB2EE88 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */; };
 		3044E8D92FD2E699111E292C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE37C795F77F61F22E06 /* MainViewController.m */; };
 		3044E9687931AEEF383F0695 /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E7FAE74652E3A02E97C0 /* UserItem.m */; };
@@ -19,7 +20,6 @@
 		3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044EB3D1F02BE19311BD2FA /* CardCell.xib */; };
 		3044ED96B59BDEFBF9F940A4 /* SessionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC9F5554D23CCFE8EB0D /* SessionItem.m */; };
 		3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E6D6C3843514B6129C28 /* Settings.m */; };
-		3044EDFCD360D9616D611FF5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EBF8E4D9431730857EE0 /* Card.m */; };
 		3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2C0D69A061B4390B622 /* MainPresenter.m */; };
 		9CE591AB19D9615E00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AA19D9615E00447DE2 /* main.m */; };
 		9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AD19D9615E00447DE2 /* AppDelegate.m */; };
@@ -44,23 +44,23 @@
 
 /* Begin PBXFileReference section */
 		3044E2C0D69A061B4390B622 /* MainPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPresenter.m; sourceTree = "<group>"; };
+		3044E3B96AE8DB7F656AFF8F /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPresenter.m; sourceTree = "<group>"; };
+		3044E57AB7CED9FF50A2F7EC /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		3044E5864764AB458CB5FC6A /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
+		3044E5C52F68DCFC194CD935 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
 		3044E62E422B470E428F17B9 /* SettingGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGroupItem.m; sourceTree = "<group>"; };
 		3044E6D6C3843514B6129C28 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		3044E7030F125451A2779074 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		3044E752D66F6FC7A1AAC6DB /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		3044E763F46D66BE7D03E588 /* UIColor+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+helper.m"; sourceTree = "<group>"; };
 		3044E7FAE74652E3A02E97C0 /* UserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserItem.m; sourceTree = "<group>"; };
 		3044E834085467470E463099 /* MainPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPresenter.h; sourceTree = "<group>"; };
 		3044E91BB3F37D59A8E3F388 /* SessionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionItem.h; sourceTree = "<group>"; };
 		3044E92508DA9C7B72C22D37 /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
 		3044E9F356424700A6AFB77D /* UIColor+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+helper.h"; sourceTree = "<group>"; };
-		3044EA7632F765AD4475301A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		3044EB0213AED886F0C77A1A /* Viewing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewing.h; sourceTree = "<group>"; };
 		3044EB3D1F02BE19311BD2FA /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
-		3044EBF8E4D9431730857EE0 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		3044EC968D7061CCD71A2794 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		3044EC9F5554D23CCFE8EB0D /* SessionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionItem.m; sourceTree = "<group>"; };
 		3044ED8FACE78E4A0075026A /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		3044EE74AB5C42CCD577C4D1 /* UserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserItem.h; sourceTree = "<group>"; };
 		3044EE90EC05E831BBE16E5B /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		3044EE95CEC5B4558B675A05 /* SettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPresenter.h; sourceTree = "<group>"; };
-		3044EF2F14C41C49817AFA35 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		3044EF34B45B9D791FF4E4BB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		3044EF5175638DD30148BB81 /* SettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroupItem.h; sourceTree = "<group>"; };
 		3044EF83E3667B44B3362E5E /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
 		9CE591A519D9615E00447DE2 /* KPPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +115,17 @@
 				9CE591D119D97FB600447DE2 /* CardViewController.m */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		3044E3A9A78EB40F41C95021 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				3044E3B96AE8DB7F656AFF8F /* Deck.h */,
+				3044E5C52F68DCFC194CD935 /* Card.m */,
+				3044E57AB7CED9FF50A2F7EC /* Deck.m */,
+				3044EF34B45B9D791FF4E4BB /* Card.h */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		3044E42E6A64C0FB33743D76 /* Config */ = {
@@ -193,12 +204,9 @@
 		3044EF4DDE23C6C429852BBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3044EBF8E4D9431730857EE0 /* Card.m */,
-				3044EA7632F765AD4475301A /* Card.h */,
-				3044E752D66F6FC7A1AAC6DB /* Deck.m */,
-				3044EF2F14C41C49817AFA35 /* Deck.h */,
 				3044E64AE675AB3683D6D4CF /* Settings */,
 				3044E42E6A64C0FB33743D76 /* Config */,
+				3044E3A9A78EB40F41C95021 /* Cards */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,8 +376,6 @@
 				9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */,
 				9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */,
 				9CE591AB19D9615E00447DE2 /* main.m in Sources */,
-				3044EDFCD360D9616D611FF5 /* Card.m in Sources */,
-				3044E009BC883B1FD741AE9B /* Deck.m in Sources */,
 				3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */,
 				3044E8D92FD2E699111E292C /* MainViewController.m in Sources */,
 				3044E7507344C4509EB2EE88 /* CardCell.m in Sources */,
@@ -382,6 +388,8 @@
 				3044EA29D7584FE3F4621478 /* SettingGroupItem.m in Sources */,
 				3044E2931554EE808501A911 /* Configuration.m in Sources */,
 				3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */,
+				3044E710925207E4FDB6D358 /* Card.m in Sources */,
+				3044E3F0EA3F62D861A7C87E /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
