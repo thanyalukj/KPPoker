@@ -7,51 +7,73 @@
 //
 
 #import "SettingsTableViewController.h"
+#import "SettingsPresenter.h"
+#import "SettingItem.h"
+#import "SettingGroupItem.h"
 
 @interface SettingsTableViewController ()
 
 @end
 
-@implementation SettingsTableViewController
+@implementation SettingsTableViewController {
+    SettingsPresenter *_presenter;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    _presenter = [[SettingsPresenter alloc] init];
+
+    [self configureNavigationBar];
+    [self configureTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configureNavigationBar {
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissView:)];
+    self.navigationItem.rightBarButtonItem = doneButton;
+}
+
+- (void)configureTableView {
+    UINib *cellNib = [UINib nibWithNibName:@"SettingTableViewCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:@"settingCell"];
+    [self.tableView reloadData];
+}
+
+- (void)dismissView:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return _presenter.settingGroups.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    SettingGroupItem *groupItem = [_presenter groupItemAtIndex:(NSUInteger) section];
+    return [groupItem.settings count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    SettingItem *item = [self settingItemAtIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"settingCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = item.label;
+    cell.accessoryView = [item accessoryViewWithTableWidth:tableView.bounds.size.width];
     
     return cell;
 }
-*/
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    SettingGroupItem *groupItem = [_presenter groupItemAtIndex:(NSUInteger) section];
+    return groupItem.title;
+}
+
+- (SettingItem *)settingItemAtIndexPath:(NSIndexPath *)indexPath {
+    SettingGroupItem *groupItem = [_presenter groupItemAtIndex:(NSUInteger) indexPath.section];
+    SettingItem *item = groupItem.settings[(NSUInteger)indexPath.row];
+    return item;
+}
 
 /*
 // Override to support conditional editing of the table view.

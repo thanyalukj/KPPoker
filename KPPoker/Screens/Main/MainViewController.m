@@ -127,8 +127,13 @@ static NSString *cellIdentifier = @"cardCell";
 
 #pragma mark - card type
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSUInteger selectedIndex = [self.tabBar.items indexOfObject:self.tabBar.selectedItem];
-    [_presenter selectDeckType:selectedIndex];
+    if ([item.title isEqualToString:@"Settings"]) {
+        [self performSegueWithIdentifier:@"viewSettings" sender:self];
+    }
+    else {
+        NSUInteger selectedIndex = [self.tabBar.items indexOfObject:self.tabBar.selectedItem];
+        [_presenter selectDeckType:selectedIndex];
+    }
 }
 
 @end
