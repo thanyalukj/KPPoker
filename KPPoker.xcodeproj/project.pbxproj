@@ -28,8 +28,6 @@
 		9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D119D97FB600447DE2 /* CardViewController.m */; };
 		9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D419D9819200447DE2 /* DismissSegue.m */; };
 		9CE5921519D9C5CD00447DE2 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */; };
-		9CE5921919D9C64800447DE2 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5921719D9C64800447DE2 /* SettingTableViewCell.m */; };
-		9CE5921A19D9C64800447DE2 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE5921819D9C64800447DE2 /* SettingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +82,6 @@
 		9CE591D419D9819200447DE2 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 		9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
-		9CE5921619D9C64800447DE2 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
-		9CE5921719D9C64800447DE2 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
-		9CE5921819D9C64800447DE2 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +116,6 @@
 			children = (
 				9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */,
 				9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */,
-				9CE5921619D9C64800447DE2 /* SettingTableViewCell.h */,
-				9CE5921719D9C64800447DE2 /* SettingTableViewCell.m */,
-				9CE5921819D9C64800447DE2 /* SettingTableViewCell.xib */,
 				3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */,
 				3044EE95CEC5B4558B675A05 /* SettingsPresenter.h */,
 			);
@@ -336,7 +328,6 @@
 				9CE591B419D9615E00447DE2 /* Main.storyboard in Resources */,
 				9CE591B919D9615E00447DE2 /* LaunchScreen.xib in Resources */,
 				9CE591B619D9615E00447DE2 /* Images.xcassets in Resources */,
-				9CE5921A19D9C64800447DE2 /* SettingTableViewCell.xib in Resources */,
 				3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +348,6 @@
 			files = (
 				9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */,
 				9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */,
-				9CE5921919D9C64800447DE2 /* SettingTableViewCell.m in Sources */,
 				9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */,
 				9CE591AB19D9615E00447DE2 /* main.m in Sources */,
 				3044EDFCD360D9616D611FF5 /* Card.m in Sources */,
