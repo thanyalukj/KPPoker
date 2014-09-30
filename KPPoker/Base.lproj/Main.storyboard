@@ -25,10 +25,10 @@
                                     <constraint firstAttribute="height" constant="49" id="KyA-iU-yAu"/>
                                 </constraints>
                                 <items>
-                                    <tabBarItem title="Standard" id="Luj-kR-wAF"/>
-                                    <tabBarItem title="Fibonacci" id="7yf-6b-EhW"/>
-                                    <tabBarItem title="T-Shirt" id="ZpF-dB-p1f"/>
-                                    <tabBarItem title="Settings" id="Fvf-Wj-FBw"/>
+                                    <tabBarItem title="Standard" image="icon_cards" id="Luj-kR-wAF"/>
+                                    <tabBarItem title="Fibonacci" image="icon_fibonacci" id="7yf-6b-EhW"/>
+                                    <tabBarItem title="T-Shirt" image="icon_tee" id="ZpF-dB-p1f"/>
+                                    <tabBarItem title="Settings" image="icon_settings" id="Fvf-Wj-FBw"/>
                                 </items>
                             </tabBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-rC-uNS">
@@ -210,6 +210,10 @@
     </scenes>
     <resources>
         <image name="card_?" width="295" height="448"/>
+        <image name="icon_cards" width="27" height="27"/>
+        <image name="icon_fibonacci" width="27" height="27"/>
+        <image name="icon_settings" width="27" height="27"/>
+        <image name="icon_tee" width="27" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kV9-Dv-0C9"/>

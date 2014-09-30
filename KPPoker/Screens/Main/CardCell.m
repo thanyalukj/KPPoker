@@ -36,7 +36,7 @@
         _cardImageView.image = cardImage;
         _cardLabel.text = nil;
     } else {
-        _cardImageView.image = [UIImage imageNamed:@"card_small"];
+        _cardImageView.image = _deckType == DeckTypeTShirt ? [UIImage imageNamed:@"card_small_tee"] : [UIImage imageNamed:@"card_small"];
         _cardLabel.text = [[_card.content stringByReplacingOccurrencesOfString:@"shirt_" withString:@""] uppercaseString];
     }
     self.backgroundColor = [UIColor colorForContent:_card.content];
