@@ -12,7 +12,7 @@
     if ([@[@"0", @"13", @"90", @"shirt_s"] containsObject:content]) {
         return [self KKPurple];
     }
-    if ([@[@"1", @"12", @"144", @"shirt_m"] containsObject:content]) {
+    if ([@[@"1", @"12", @"20", @"144", @"shirt_m"] containsObject:content]) {
         return [self KKBlue];
     }
     if ([@[@"2", @"21", @"40", @"shirt_l"] containsObject:content]) {
