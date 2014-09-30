@@ -416,6 +416,7 @@
 				TargetAttributes = {
 					9CE591A419D9615E00447DE2 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = DPJCBP4XCC;
 					};
 					9CE591BD19D9615E00447DE2 = {
 						CreatedOnToolsVersion = 6.0;
