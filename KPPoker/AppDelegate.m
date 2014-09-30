@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "Configuration.h"
+#import "AWSService.h"
+#import "Constants.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    AWSCognitoCredentialsProvider *credentialsProvider = [AWSCognitoCredentialsProvider credentialsWithRegionType:AWSRegionUSEast1
+                                                                                                        accountId:AWSAccountID
+                                                                                                   identityPoolId:CognitoPoolID
+                                                                                                    unauthRoleArn:CognitoRoleUnauth
+                                                                                                      authRoleArn:nil];
+
+
+    AWSServiceConfiguration *configuration = [AWSServiceConfiguration configurationWithRegion:AWSRegionUSEast1
+                                                                          credentialsProvider:credentialsProvider];
+    [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
+
+
     self.window.backgroundColor = [UIColor whiteColor];
     [Configuration instance];
     return YES;
