@@ -5,16 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ScoreInteracting
-
-- (void)setScores:(NSArray *)scores;
-
-@end
-
 @interface ScoreInteractor : NSObject
 
-@property (nonatomic, weak) id <ScoreInteracting> delegate;
-
-- (instancetype)initWithStoryId:(NSString *)storyId;
+- (instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score;
 
 @end

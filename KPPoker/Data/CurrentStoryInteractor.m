@@ -8,6 +8,7 @@
 #import "BFTask.h"
 #import "CurrentStoryTable.h"
 #import "StoriesTable.h"
+#import "BaseCurrentStory.h"
 
 
 @implementation CurrentStoryInteractor {
@@ -30,9 +31,10 @@
             NSLog(task.error.localizedDescription);
         } else {
             AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
-            if (paginatedOutput.items){
+            if (paginatedOutput.items && paginatedOutput.items.count == 1){
                 CurrentStory *currentStory = paginatedOutput.items.firstObject;
-                [_delegate setStory:currentStory];
+                BaseCurrentStory *baseCurrentStory = [[BaseCurrentStory alloc] initWithStoryId:currentStory.storyId sessionId:currentStory.sessionId];
+                [_delegate setStory:baseCurrentStory];
             }
         }
         return nil;

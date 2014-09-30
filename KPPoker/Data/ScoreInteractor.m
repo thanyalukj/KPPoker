@@ -10,26 +10,26 @@
 
 @implementation ScoreInteractor {
     NSString *_storyId;
+    NSString *_personId;
+    NSString *_score;
 }
 
-- (instancetype)initWithStoryId:(NSString *)storyId {
+- (instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score {
     if (self = [super init]){
         _storyId = storyId;
+        _personId = personId;
+        _score = score;
     }
     return self;
 }
 
 - (void)start {
     ScoreTable *scoreTable = [[ScoreTable alloc]init];
-    BFTask *currentStoryQuery = [scoreTable fetchScoresWithStoryId:_storyId];
-    [currentStoryQuery
-            continueWithExecutor:[BFExecutor mainThreadExecutor] withSuccessBlock:^id(BFTask *task) {
+    BFTask *insertQuery = [scoreTable insertScoreWithStoryId:_storyId personId:_personId scoreValue:_score];
+    [[BFTask taskForCompletionOfAllTasks:@[insertQuery]]
+            continueWithExecutor:[BFExecutor mainThreadExecutor] withBlock:^id(BFTask *task) {
         if (task.error) {
             NSLog(task.error.localizedDescription);
-        } else {
-            AWSDynamoDBPaginatedOutput *paginatedOutput = task.result;
-            NSArray *scores = (Score *)paginatedOutput.items;
-            [_delegate setScores:scores];
         }
         return nil;
     }];

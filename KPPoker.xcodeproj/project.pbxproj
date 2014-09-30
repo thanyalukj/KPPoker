@@ -37,6 +37,7 @@
 		ACD094ED978B42B0EF103FAE /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985206B856E2A0FE8437 /* ScoreTable.m */; };
 		ACD095694F51861B16FA342C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */; };
 		ACD095EB43C98A82060790D7 /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BEA622E825330F1927D /* SessionsTest.m */; };
+		ACD09652989280A2728896DF /* BaseCurrentStory.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */; };
 		ACD0965B48D17C3A4959EE90 /* SessionsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985E15EC93D78EB29B41 /* SessionsInteractor.m */; };
 		ACD097417D9FB725D7A47946 /* CurrentStoryTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD096779877660FFF0452CA /* CurrentStoryTable.m */; };
 		ACD09840A2F0D95214129B4D /* CurrentStoryTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09F6FD2DDFAEEC992C0D1 /* CurrentStoryTableTest.m */; };
@@ -104,6 +105,7 @@
 		9CE591D419D9819200447DE2 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 		9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		ACD09089E6AE1762072D3EBC /* BaseCurrentStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCurrentStory.h; sourceTree = "<group>"; };
 		ACD091219CB90846110AD239 /* StoriesTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTable.m; sourceTree = "<group>"; };
 		ACD0915036E897030A7FBEC5 /* StoriesTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableTest.m; sourceTree = "<group>"; };
 		ACD093445D63C63CA88EAE58 /* SessionsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsTable.h; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		ACD09ABE5288FF038E1AE22A /* ScoreInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreInteractor.m; sourceTree = "<group>"; };
 		ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		ACD09BEA622E825330F1927D /* SessionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTest.m; sourceTree = "<group>"; };
+		ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCurrentStory.m; sourceTree = "<group>"; };
 		ACD09F06377589A06E996596 /* StoriesInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesInteractor.m; sourceTree = "<group>"; };
 		ACD09F18A4C2707139F3D714 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ACD09F6FD2DDFAEEC992C0D1 /* CurrentStoryTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTableTest.m; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				ACD0956F8DEBF6178E4D899B /* CurrentStoryInteractor.m */,
 				ACD09F06377589A06E996596 /* StoriesInteractor.m */,
 				ACD094DB58A584CCEC1BC36A /* StoriesInteractor.h */,
+				ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */,
+				ACD09089E6AE1762072D3EBC /* BaseCurrentStory.h */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				ACD0965B48D17C3A4959EE90 /* SessionsInteractor.m in Sources */,
 				ACD093FE04F962D758AA9D15 /* CurrentStoryInteractor.m in Sources */,
 				ACD09C5BABC374046997BACA /* StoriesInteractor.m in Sources */,
+				ACD09652989280A2728896DF /* BaseCurrentStory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
