@@ -21,7 +21,7 @@
     if ([@[@"3", @"34", @"100", @"shirt_xl"] containsObject:content]) {
         return [self KKYellow];
     }
-    if ([@[@"5", @"55", @"coffee", @"shirt_xxl"] containsObject:content]) {
+    if ([@[@"5", @"55", @"coffee", @"shirt_xxl" , @"shirt_coffee"] containsObject:content]) {
         return [self KKOrange];
     }
     if ([@[@"8", @"89", @"?", @"shirt_xs"] containsObject:content]) {
