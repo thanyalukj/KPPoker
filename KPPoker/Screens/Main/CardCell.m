@@ -20,6 +20,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.layer.cornerRadius = 6;
+    self.contentView.frame = self.bounds;
+    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 - (void)setCard:(Card *)card deckType:(DeckType)deckType {
@@ -41,6 +43,8 @@
     }
     self.backgroundColor = [UIColor colorForContent:_card.content];
     _cardLabel.textColor = [UIColor colorForContent:_card.content];
+    
+    [self updateConstraintsIfNeeded];
 }
 
 @end

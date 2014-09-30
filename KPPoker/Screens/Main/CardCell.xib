@@ -14,12 +14,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_small" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-ld-4j6">
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_small_coffee" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-ld-4j6">
                         <rect key="frame" x="5" y="0.0" width="60" height="90"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-dp-A7c">
-                        <rect key="frame" x="29" y="33" width="13" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <rect key="frame" x="28" y="33" width="14" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -27,24 +27,16 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="zRq-ld-4j6" firstAttribute="leading" secondItem="bxb-pY-n3Y" secondAttribute="leading" id="1Ij-pA-maH"/>
-                <constraint firstAttribute="trailing" secondItem="zRq-ld-4j6" secondAttribute="trailing" constant="-6" id="Cbt-5L-XuR"/>
-                <constraint firstAttribute="bottom" secondItem="zRq-ld-4j6" secondAttribute="bottom" id="E3d-ua-zTO"/>
-                <constraint firstItem="zRq-ld-4j6" firstAttribute="top" secondItem="bxb-pY-n3Y" secondAttribute="top" id="SFu-wR-hcV"/>
+                <constraint firstItem="zRq-ld-4j6" firstAttribute="leading" secondItem="bxb-pY-n3Y" secondAttribute="leading" constant="5" id="AHk-wq-pXU"/>
+                <constraint firstAttribute="trailing" secondItem="zRq-ld-4j6" secondAttribute="trailing" constant="5" id="ZcZ-lr-f9Y"/>
+                <constraint firstItem="zRq-ld-4j6" firstAttribute="top" secondItem="bxb-pY-n3Y" secondAttribute="top" id="bZD-S8-ydG"/>
                 <constraint firstAttribute="centerX" secondItem="zRq-ld-4j6" secondAttribute="centerX" id="fp1-Cx-tjY"/>
                 <constraint firstAttribute="centerY" secondItem="V0X-dp-A7c" secondAttribute="centerY" id="qXg-8v-CHS"/>
+                <constraint firstAttribute="bottom" secondItem="zRq-ld-4j6" secondAttribute="bottom" id="spH-je-3Sh"/>
                 <constraint firstAttribute="centerY" secondItem="zRq-ld-4j6" secondAttribute="centerY" id="xIz-BV-Knj"/>
                 <constraint firstAttribute="centerX" secondItem="V0X-dp-A7c" secondAttribute="centerX" id="ylm-oX-kWP"/>
             </constraints>
             <size key="customSize" width="72" height="95"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="1Ij-pA-maH"/>
-                    <exclude reference="Cbt-5L-XuR"/>
-                    <exclude reference="E3d-ua-zTO"/>
-                    <exclude reference="SFu-wR-hcV"/>
-                </mask>
-            </variation>
             <connections>
                 <outlet property="_cardImageView" destination="zRq-ld-4j6" id="rUd-9p-r5c"/>
                 <outlet property="_cardLabel" destination="V0X-dp-A7c" id="ee8-NU-lRV"/>
@@ -53,6 +45,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="card_small" width="60" height="90"/>
+        <image name="card_small_coffee" width="60" height="90"/>
     </resources>
 </document>
