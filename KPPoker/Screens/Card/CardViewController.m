@@ -11,6 +11,8 @@
 #import "Configuration.h"
 #import "Settings.h"
 #import "ScoreInteractor.h"
+#import "CurrentStoryInteractor.h"
+#import "BaseCurrentStory.h"
 
 @interface CardViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
@@ -18,17 +20,27 @@
 
 @implementation CardViewController {
     ScoreInteractor *_scoreInteractor;
+    CurrentStoryInteractor *_currentStoryInteractor;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSString *_userName = [Configuration instance].settings.userName;
-    _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:@"story1" personId:_userName score:self.card.content];
-    [_scoreInteractor start];
+    NSString *_sessionId = [Configuration instance].settings.sessionId;
+    if (_sessionId){
+        _currentStoryInteractor = [[CurrentStoryInteractor alloc] initWithSessionId:_sessionId];
+        _currentStoryInteractor.delegate = self;
+        [_currentStoryInteractor start];
+    }
 
     NSString *imageName = [NSString stringWithFormat:@"card_%@", self.card.content];
     self.cardImageView.image = [UIImage imageNamed:imageName];
+}
+
+- (void)setStory:(BaseCurrentStory *)story {
+    NSString *_userName = [Configuration instance].settings.userName;
+    _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:story.storyId personId:_userName score:self.card.content];
+    [_scoreInteractor start];
 }
 
 /*

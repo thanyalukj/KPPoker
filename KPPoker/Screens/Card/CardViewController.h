@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CurrentStoryInteractor.h"
 
 @class Card;
 
-@interface CardViewController : UIViewController
+@interface CardViewController : UIViewController <CurrentStoryInteracting>
 @property (nonatomic) Card *card;
 @end
