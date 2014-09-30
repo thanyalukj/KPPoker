@@ -6,13 +6,17 @@
 #import <Foundation/Foundation.h>
 
 @class SettingGroupItem;
+@protocol Viewing;
 
 
 @interface SettingsPresenter : NSObject
 
 @property (nonatomic) NSArray *settingGroups;
+@property (nonatomic, weak) id<Viewing> viewDelegate;
 
 - (SettingGroupItem *)groupItemAtIndex:(NSInteger)index;
+
+- (void)viewDidLoad;
 
 - (void)viewDismissed;
 @end

@@ -27,10 +27,14 @@
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     if (self) {
-        _presenter = [[MainPresenter alloc] init];
-        _presenter.viewDelegate = self;
+        [self configurePresenter];
     }
     return self;
+}
+
+- (void)configurePresenter {
+    _presenter = [[MainPresenter alloc] init];
+    _presenter.viewDelegate = self;
 }
 
 - (void)viewDidLoad {
@@ -38,7 +42,7 @@
     [_presenter viewDidLoad];
     [self configureCollectionView];
     [self configureTabBar];
-    [self reloadCard];
+    [self reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,7 +63,7 @@
     self.tabBar.delegate = self;
 }
 
-- (void)reloadCard {
+- (void)reloadData {
     [self updateCollectionViewLayout];
     [self.collectionView reloadData];
 }

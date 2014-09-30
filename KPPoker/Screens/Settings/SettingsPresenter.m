@@ -8,6 +8,7 @@
 #import "UserItem.h"
 #import "SettingGroupItem.h"
 #import "Configuration.h"
+#import "Viewing.h"
 
 
 @implementation SettingsPresenter {
@@ -31,6 +32,10 @@
     groupItem.title = @"Settings";
     groupItem.settings =  @[[[SessionItem alloc] init],[[UserItem alloc] init]];
     return groupItem;
+}
+
+- (void)viewDidLoad {
+    [self.viewDelegate reloadData];
 }
 
 - (SettingGroupItem *)groupItemAtIndex:(NSInteger)index {

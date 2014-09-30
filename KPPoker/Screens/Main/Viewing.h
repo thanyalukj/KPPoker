@@ -7,6 +7,6 @@
 
 @protocol Viewing <NSObject>
 
-- (void)reloadCard;
+- (void)reloadData;
 
 @end

@@ -58,7 +58,7 @@
         default:
             self.selectedDeck = self.standardDeck;
     }
-    [self.viewDelegate reloadCard];
+    [self.viewDelegate reloadData];
 }
 
 - (DeckType)selectedDeckType {
