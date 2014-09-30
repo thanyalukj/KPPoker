@@ -124,6 +124,7 @@ static NSString *cellIdentifier = @"cardCell";
     Card *card = [_presenter.selectedDeck cardAtIndex:(NSUInteger) indexPath.row];
     CardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell setCard:card deckType:_presenter.selectedDeckType];
+
     return cell;
 }
 
