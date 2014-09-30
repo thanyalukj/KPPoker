@@ -6,6 +6,7 @@
 #import "SessionItem.h"
 #import "Configuration.h"
 #import "Settings.h"
+#import "SessionsInteractor.h"
 
 
 @implementation SessionItem
@@ -28,6 +29,9 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     [super textFieldDidEndEditing:textField];
     [Configuration instance].settings.sessionId = self.value;
+    NSString *_userName = [Configuration instance].settings.userName;
+    SessionsInteractor *_sessionsInteractor = [[SessionsInteractor alloc] initWithSessionId:self.value personId:_userName];
+    [_sessionsInteractor start];
 }
 
 @end

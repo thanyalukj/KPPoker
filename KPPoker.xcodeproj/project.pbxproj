@@ -31,6 +31,20 @@
 		9CE591D219D97FB600447DE2 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D119D97FB600447DE2 /* CardViewController.m */; };
 		9CE591D519D9819200447DE2 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D419D9819200447DE2 /* DismissSegue.m */; };
 		9CE5921519D9C5CD00447DE2 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */; };
+		ACD092628BBF7C2316E72DD1 /* ScoreTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09FE20BD8F36BDB83B76B /* ScoreTableTest.m */; };
+		ACD092B9C1A49DDDB1CA7917 /* StoriesTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0915036E897030A7FBEC5 /* StoriesTableTest.m */; };
+		ACD093FE04F962D758AA9D15 /* CurrentStoryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0956F8DEBF6178E4D899B /* CurrentStoryInteractor.m */; };
+		ACD094ED978B42B0EF103FAE /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985206B856E2A0FE8437 /* ScoreTable.m */; };
+		ACD095694F51861B16FA342C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */; };
+		ACD095EB43C98A82060790D7 /* SessionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09BEA622E825330F1927D /* SessionsTest.m */; };
+		ACD09652989280A2728896DF /* BaseCurrentStory.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */; };
+		ACD0965B48D17C3A4959EE90 /* SessionsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985E15EC93D78EB29B41 /* SessionsInteractor.m */; };
+		ACD097417D9FB725D7A47946 /* CurrentStoryTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD096779877660FFF0452CA /* CurrentStoryTable.m */; };
+		ACD09840A2F0D95214129B4D /* CurrentStoryTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09F6FD2DDFAEEC992C0D1 /* CurrentStoryTableTest.m */; };
+		ACD099BE3750EE8CDC5AE77D /* StoriesTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD091219CB90846110AD239 /* StoriesTable.m */; };
+		ACD09AEC2A7F8967457CFBD6 /* ScoreInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09ABE5288FF038E1AE22A /* ScoreInteractor.m */; };
+		ACD09C5BABC374046997BACA /* StoriesInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09F06377589A06E996596 /* StoriesInteractor.m */; };
+		ACD09E9DF3B6DE91F2B64053 /* SessionsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD095868802787185F26A8B /* SessionsTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27D7982789DF28AF2F97101D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3044E2C0D69A061B4390B622 /* MainPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPresenter.m; sourceTree = "<group>"; };
 		3044E3B96AE8DB7F656AFF8F /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPresenter.m; sourceTree = "<group>"; };
@@ -72,7 +87,7 @@
 		3044EF34B45B9D791FF4E4BB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		3044EF5175638DD30148BB81 /* SettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroupItem.h; sourceTree = "<group>"; };
 		3044EF83E3667B44B3362E5E /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
-		47037643A0B64E848FD51994 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9CE591A519D9615E00447DE2 /* KPPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE591A919D9615E00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE591AA19D9615E00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +105,30 @@
 		9CE591D419D9819200447DE2 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 		9CE5921319D9C5CD00447DE2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		ACD09089E6AE1762072D3EBC /* BaseCurrentStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCurrentStory.h; sourceTree = "<group>"; };
+		ACD091219CB90846110AD239 /* StoriesTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTable.m; sourceTree = "<group>"; };
+		ACD0915036E897030A7FBEC5 /* StoriesTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableTest.m; sourceTree = "<group>"; };
+		ACD093445D63C63CA88EAE58 /* SessionsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsTable.h; sourceTree = "<group>"; };
+		ACD093B6EAD27DAC7B16C718 /* CurrentStoryTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryTable.h; sourceTree = "<group>"; };
+		ACD0949F2F2ACEBCDB46261B /* ScoreTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreTable.h; sourceTree = "<group>"; };
+		ACD094DB58A584CCEC1BC36A /* StoriesInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesInteractor.h; sourceTree = "<group>"; };
+		ACD0956F8DEBF6178E4D899B /* CurrentStoryInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryInteractor.m; sourceTree = "<group>"; };
+		ACD095868802787185F26A8B /* SessionsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTable.m; sourceTree = "<group>"; };
+		ACD096313B251CFC48801004 /* CurrentStoryInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStoryInteractor.h; sourceTree = "<group>"; };
+		ACD0964E781A53F2E933E179 /* StoriesTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesTable.h; sourceTree = "<group>"; };
+		ACD096779877660FFF0452CA /* CurrentStoryTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTable.m; sourceTree = "<group>"; };
+		ACD0985206B856E2A0FE8437 /* ScoreTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTable.m; sourceTree = "<group>"; };
+		ACD0985E15EC93D78EB29B41 /* SessionsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsInteractor.m; sourceTree = "<group>"; };
+		ACD098FB433CEED94F1741E0 /* SessionsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionsInteractor.h; sourceTree = "<group>"; };
+		ACD09A478DA188031ACD9DEA /* ScoreInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreInteractor.h; sourceTree = "<group>"; };
+		ACD09ABE5288FF038E1AE22A /* ScoreInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreInteractor.m; sourceTree = "<group>"; };
+		ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		ACD09BEA622E825330F1927D /* SessionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionsTest.m; sourceTree = "<group>"; };
+		ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCurrentStory.m; sourceTree = "<group>"; };
+		ACD09F06377589A06E996596 /* StoriesInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesInteractor.m; sourceTree = "<group>"; };
+		ACD09F18A4C2707139F3D714 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ACD09F6FD2DDFAEEC992C0D1 /* CurrentStoryTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStoryTableTest.m; sourceTree = "<group>"; };
+		ACD09FE20BD8F36BDB83B76B /* ScoreTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreTableTest.m; sourceTree = "<group>"; };
 		F389E9A2C2824F69A8685B6C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -223,14 +262,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		71BA571176C51B5BCAA0335D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D7982789DF28AF2F97101D /* Pods.debug.xcconfig */,
+				4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CE5919C19D9615E00447DE2 = {
 			isa = PBXGroup;
 			children = (
 				9CE591A719D9615E00447DE2 /* KPPoker */,
 				9CE591C119D9615E00447DE2 /* KPPokerTests */,
 				9CE591A619D9615E00447DE2 /* Products */,
-				47037643A0B64E848FD51994 /* Pods.xcconfig */,
 				1E0184E240BD4734B431D8FA /* Frameworks */,
+				71BA571176C51B5BCAA0335D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +303,7 @@
 				3044EF4DDE23C6C429852BBE /* Models */,
 				3044ED1A879E0CE3213EB57D /* Screens */,
 				3044E6BC4095F3A749454897 /* Helpers */,
+				ACD098AC6E56C8F77E21DEB8 /* Data */,
 			);
 			path = KPPoker;
 			sourceTree = "<group>";
@@ -273,6 +322,10 @@
 			children = (
 				9CE591C419D9615E00447DE2 /* KPPokerTests.m */,
 				9CE591C219D9615E00447DE2 /* Supporting Files */,
+				ACD09F6FD2DDFAEEC992C0D1 /* CurrentStoryTableTest.m */,
+				ACD09BEA622E825330F1927D /* SessionsTest.m */,
+				ACD09FE20BD8F36BDB83B76B /* ScoreTableTest.m */,
+				ACD0915036E897030A7FBEC5 /* StoriesTableTest.m */,
 			);
 			path = KPPokerTests;
 			sourceTree = "<group>";
@@ -283,6 +336,33 @@
 				9CE591C319D9615E00447DE2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACD098AC6E56C8F77E21DEB8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ACD09F18A4C2707139F3D714 /* Constants.h */,
+				ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */,
+				ACD0949F2F2ACEBCDB46261B /* ScoreTable.h */,
+				ACD0985206B856E2A0FE8437 /* ScoreTable.m */,
+				ACD0964E781A53F2E933E179 /* StoriesTable.h */,
+				ACD091219CB90846110AD239 /* StoriesTable.m */,
+				ACD093445D63C63CA88EAE58 /* SessionsTable.h */,
+				ACD095868802787185F26A8B /* SessionsTable.m */,
+				ACD09A478DA188031ACD9DEA /* ScoreInteractor.h */,
+				ACD09ABE5288FF038E1AE22A /* ScoreInteractor.m */,
+				ACD093B6EAD27DAC7B16C718 /* CurrentStoryTable.h */,
+				ACD096779877660FFF0452CA /* CurrentStoryTable.m */,
+				ACD098FB433CEED94F1741E0 /* SessionsInteractor.h */,
+				ACD0985E15EC93D78EB29B41 /* SessionsInteractor.m */,
+				ACD096313B251CFC48801004 /* CurrentStoryInteractor.h */,
+				ACD0956F8DEBF6178E4D899B /* CurrentStoryInteractor.m */,
+				ACD09F06377589A06E996596 /* StoriesInteractor.m */,
+				ACD094DB58A584CCEC1BC36A /* StoriesInteractor.h */,
+				ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */,
+				ACD09089E6AE1762072D3EBC /* BaseCurrentStory.h */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8DC359F77E74F24BD1F8BC4 /* Check Pods Manifest.lock */ = {
@@ -439,6 +519,16 @@
 				3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */,
 				3044E710925207E4FDB6D358 /* Card.m in Sources */,
 				3044E3F0EA3F62D861A7C87E /* Deck.m in Sources */,
+				ACD095694F51861B16FA342C /* Constants.m in Sources */,
+				ACD094ED978B42B0EF103FAE /* ScoreTable.m in Sources */,
+				ACD099BE3750EE8CDC5AE77D /* StoriesTable.m in Sources */,
+				ACD09E9DF3B6DE91F2B64053 /* SessionsTable.m in Sources */,
+				ACD09AEC2A7F8967457CFBD6 /* ScoreInteractor.m in Sources */,
+				ACD097417D9FB725D7A47946 /* CurrentStoryTable.m in Sources */,
+				ACD0965B48D17C3A4959EE90 /* SessionsInteractor.m in Sources */,
+				ACD093FE04F962D758AA9D15 /* CurrentStoryInteractor.m in Sources */,
+				ACD09C5BABC374046997BACA /* StoriesInteractor.m in Sources */,
+				ACD09652989280A2728896DF /* BaseCurrentStory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +537,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE591C519D9615E00447DE2 /* KPPokerTests.m in Sources */,
+				ACD09840A2F0D95214129B4D /* CurrentStoryTableTest.m in Sources */,
+				ACD095EB43C98A82060790D7 /* SessionsTest.m in Sources */,
+				ACD092628BBF7C2316E72DD1 /* ScoreTableTest.m in Sources */,
+				ACD092B9C1A49DDDB1CA7917 /* StoriesTableTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +612,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/Pods\"/**",
+				);
 			};
 			name = Debug;
 		};
@@ -552,13 +649,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/Pods\"/**",
+				);
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9CE591C919D9615E00447DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47037643A0B64E848FD51994 /* Pods.xcconfig */;
+			baseConfigurationReference = 27D7982789DF28AF2F97101D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -566,12 +666,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
 		9CE591CA19D9615E00447DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47037643A0B64E848FD51994 /* Pods.xcconfig */;
+			baseConfigurationReference = 4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -579,6 +680,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

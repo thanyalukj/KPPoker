@@ -6,6 +6,9 @@
 #import "CardCell.h"
 #import "Card.h"
 #import "UIColor+helper.h"
+#import "ScoreInteractor.h"
+#import "Configuration.h"
+#import "Settings.h"
 
 
 @implementation CardCell {

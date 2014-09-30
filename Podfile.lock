@@ -1,13 +1,4 @@
 PODS:
-  - AWSCognitoSync (1.0.4):
-    - AWSCognitoSync/CognitoSync
-    - AWSCognitoSync/CognitoSyncClient
-    - AWSiOSSDKv2
-  - AWSCognitoSync/CognitoSync (1.0.4):
-    - AWSiOSSDKv2
-  - AWSCognitoSync/CognitoSyncClient (1.0.4):
-    - AWSCognitoSync/CognitoSync
-    - AWSiOSSDKv2
   - AWSiOSSDKv2 (2.0.8):
     - AWSiOSSDKv2/AutoScaling
     - AWSiOSSDKv2/AWSCore
@@ -146,11 +137,9 @@ PODS:
   - XMLDictionary (1.4)
 
 DEPENDENCIES:
-  - AWSCognitoSync
   - AWSiOSSDKv2
 
 SPEC CHECKSUMS:
-  AWSCognitoSync: 00d5ba6ca3e11dc99221763f5661ed6b5b0ce228
   AWSiOSSDKv2: 47e457fefef3b521c6e37c037578a13912af37c1
   Bolts: 2635e8698a630774689441047f3465d78c48d485
   GZIP: f27c434ffee5e9a9b34f4e9c19e91350fa8bbde1
@@ -160,4 +149,4 @@ SPEC CHECKSUMS:
   UICKeyChainStore: 4f9719600cc70025064e26f28f1210bcfc3b0c35
   XMLDictionary: 735e81b9a043e220b0d24e9d4f16719606f2e0fc
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.1
