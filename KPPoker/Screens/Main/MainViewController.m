@@ -99,7 +99,6 @@
     CGSize itemSize = [self collectionViewItemSize];
     UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
     CGFloat spacing = collectionViewLayout.minimumLineSpacing;
-    NSLog(@"%f", [self collectionViewNumberOfRows]);
     CGFloat collectionViewHeight = 2*spacing + (itemSize.height+spacing) * [self collectionViewNumberOfRows];
     CGFloat viewHeight = self.view.bounds.size.height - self.tabBar.bounds.size.height;
     return CGSizeMake(0, ((viewHeight - collectionViewHeight)/2));
