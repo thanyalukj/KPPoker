@@ -354,8 +354,6 @@
 			mainGroup = 9CE5919C19D9615E00447DE2;
 			productRefGroup = 9CE591A619D9615E00447DE2 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				9CE591A419D9615E00447DE2 /* KPPoker */,
