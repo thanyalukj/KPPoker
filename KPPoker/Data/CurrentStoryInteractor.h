@@ -5,11 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class Story;
+@class BaseCurrentStory;
 
 @protocol CurrentStoryInteracting
 
-- (void)setStory:(Story *)story;
+- (void)setStory:(BaseCurrentStory *)story;
 
 @end
 

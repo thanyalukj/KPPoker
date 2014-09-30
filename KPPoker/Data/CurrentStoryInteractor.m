@@ -7,6 +7,7 @@
 #import "CurrentStoryInteractor.h"
 #import "BFTask.h"
 #import "CurrentStoryTable.h"
+#import "BaseCurrentStory.h"
 #import "StoriesTable.h"
 #import "BaseCurrentStory.h"
 
