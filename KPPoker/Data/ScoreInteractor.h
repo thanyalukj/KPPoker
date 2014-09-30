@@ -9,4 +9,6 @@
 
 - (instancetype)initWithStoryId:(NSString *)storyId personId:(NSString *)personId score:(NSString *)score;
 
+- (void)start;
+
 @end

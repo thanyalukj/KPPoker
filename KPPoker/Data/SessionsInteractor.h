@@ -9,4 +9,5 @@
 
 - (instancetype)initWithSessionId:(NSString *)sessionId personId:(NSString *)personId;
 
+- (void)start;
 @end

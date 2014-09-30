@@ -8,15 +8,25 @@
 
 #import "CardViewController.h"
 #import "Card.h"
+#import "Configuration.h"
+#import "Settings.h"
+#import "ScoreInteractor.h"
 
 @interface CardViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
 @end
 
-@implementation CardViewController
+@implementation CardViewController {
+    ScoreInteractor *_scoreInteractor;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    NSString *_userName = [Configuration instance].settings.userName;
+    _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:@"story1" personId:_userName score:self.card.content];
+    [_scoreInteractor start];
+
     NSString *imageName = [NSString stringWithFormat:@"card_%@", self.card.content];
     self.cardImageView.image = [UIImage imageNamed:imageName];
 }
