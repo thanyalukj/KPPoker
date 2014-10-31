@@ -26,31 +26,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+#ifndef STAND_ALONE
     NSString *_sessionId = [Configuration instance].settings.sessionId;
     if (_sessionId){
         _currentStoryInteractor = [[CurrentStoryInteractor alloc] initWithSessionId:_sessionId];
         _currentStoryInteractor.delegate = self;
         [_currentStoryInteractor start];
     }
-
+#endif
     NSString *imageName = [NSString stringWithFormat:@"card_%@", self.card.content];
     self.cardImageView.image = [UIImage imageNamed:imageName];
 }
 
 - (void)setStory:(BaseCurrentStory *)story {
+#ifndef STAND_ALONE
     NSString *_userName = [Configuration instance].settings.userName;
     _scoreInteractor = [[ScoreInteractor alloc] initWithStoryId:story.storyId personId:_userName score:self.card.content];
     [_scoreInteractor start];
+#endif
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

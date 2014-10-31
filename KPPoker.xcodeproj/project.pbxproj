@@ -22,6 +22,41 @@
 		3044EDE9FE5502BBFFDC9ECF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E6D6C3843514B6129C28 /* Settings.m */; };
 		3044EF3278E72853AAA24336 /* MainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2C0D69A061B4390B622 /* MainPresenter.m */; };
 		97D7A4431FF34258AF8A5EF1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F389E9A2C2824F69A8685B6C /* libPods.a */; };
+		9C7F960F19DB548800A933FA /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D119D97FB600447DE2 /* CardViewController.m */; };
+		9C7F961019DB548800A933FA /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591D419D9819200447DE2 /* DismissSegue.m */; };
+		9C7F961119DB548800A933FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AD19D9615E00447DE2 /* AppDelegate.m */; };
+		9C7F961219DB548800A933FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AA19D9615E00447DE2 /* main.m */; };
+		9C7F961319DB548800A933FA /* MainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E2C0D69A061B4390B622 /* MainPresenter.m */; };
+		9C7F961419DB548800A933FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE37C795F77F61F22E06 /* MainViewController.m */; };
+		9C7F961519DB548800A933FA /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5E14C4E9FDDCC05A5A2 /* CardCell.m */; };
+		9C7F961619DB548800A933FA /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5921419D9C5CD00447DE2 /* SettingsTableViewController.m */; };
+		9C7F961719DB548800A933FA /* UIColor+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E763F46D66BE7D03E588 /* UIColor+helper.m */; };
+		9C7F961819DB548800A933FA /* SettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E4CE00106C7255ADFD88 /* SettingsPresenter.m */; };
+		9C7F961919DB548800A933FA /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5864764AB458CB5FC6A /* SettingItem.m */; };
+		9C7F961A19DB548800A933FA /* SessionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EC9F5554D23CCFE8EB0D /* SessionItem.m */; };
+		9C7F961B19DB548800A933FA /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E7FAE74652E3A02E97C0 /* UserItem.m */; };
+		9C7F961C19DB548800A933FA /* SettingGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E62E422B470E428F17B9 /* SettingGroupItem.m */; };
+		9C7F961D19DB548800A933FA /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044EE90EC05E831BBE16E5B /* Configuration.m */; };
+		9C7F961E19DB548800A933FA /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E6D6C3843514B6129C28 /* Settings.m */; };
+		9C7F961F19DB548800A933FA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E5C52F68DCFC194CD935 /* Card.m */; };
+		9C7F962019DB548800A933FA /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3044E57AB7CED9FF50A2F7EC /* Deck.m */; };
+		9C7F962119DB548800A933FA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09B03A5CB8C0B0CA6DB0E /* Constants.m */; };
+		9C7F962219DB548800A933FA /* ScoreTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985206B856E2A0FE8437 /* ScoreTable.m */; };
+		9C7F962319DB548800A933FA /* StoriesTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD091219CB90846110AD239 /* StoriesTable.m */; };
+		9C7F962419DB548800A933FA /* SessionsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD095868802787185F26A8B /* SessionsTable.m */; };
+		9C7F962519DB548800A933FA /* ScoreInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09ABE5288FF038E1AE22A /* ScoreInteractor.m */; };
+		9C7F962619DB548800A933FA /* CurrentStoryTable.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD096779877660FFF0452CA /* CurrentStoryTable.m */; };
+		9C7F962719DB548800A933FA /* SessionsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0985E15EC93D78EB29B41 /* SessionsInteractor.m */; };
+		9C7F962819DB548800A933FA /* CurrentStoryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0956F8DEBF6178E4D899B /* CurrentStoryInteractor.m */; };
+		9C7F962919DB548800A933FA /* StoriesInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09F06377589A06E996596 /* StoriesInteractor.m */; };
+		9C7F962A19DB548800A933FA /* BaseCurrentStory.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD09C0ECFD23FEB3DCF6451 /* BaseCurrentStory.m */; };
+		9C7F962C19DB548800A933FA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F389E9A2C2824F69A8685B6C /* libPods.a */; };
+		9C7F962E19DB548800A933FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B219D9615E00447DE2 /* Main.storyboard */; };
+		9C7F962F19DB548800A933FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B719D9615E00447DE2 /* LaunchScreen.xib */; };
+		9C7F963019DB548800A933FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B519D9615E00447DE2 /* Images.xcassets */; };
+		9C7F963119DB548800A933FA /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044EB3D1F02BE19311BD2FA /* CardCell.xib */; };
+		9C7F963919DB653B00A933FA /* FrutigerLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */; };
+		9C7F963A19DB655000A933FA /* FrutigerLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */; };
 		9CE591AB19D9615E00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AA19D9615E00447DE2 /* main.m */; };
 		9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AD19D9615E00447DE2 /* AppDelegate.m */; };
 		9CE591B419D9615E00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B219D9615E00447DE2 /* Main.storyboard */; };
@@ -88,6 +123,9 @@
 		3044EF5175638DD30148BB81 /* SettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroupItem.h; sourceTree = "<group>"; };
 		3044EF83E3667B44B3362E5E /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
 		4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9C7F963619DB548800A933FA /* Planning Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planning Poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7F963719DB548900A933FA /* PlaningPoker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PlaningPoker-Info.plist"; path = "/Users/thanyaluk/Development/Xcode/personal/KPPoker/PlaningPoker-Info.plist"; sourceTree = "<absolute>"; };
+		9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Light.otf"; sourceTree = "<group>"; };
 		9CE591A519D9615E00447DE2 /* KPPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE591A919D9615E00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE591AA19D9615E00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +171,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C7F962B19DB548800A933FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7F962C19DB548800A933FA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CE591A219D9615E00447DE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +212,14 @@
 				9CE591D119D97FB600447DE2 /* CardViewController.m */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		3044E175D954A5D09B554D43 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3044E3A9A78EB40F41C95021 /* Cards */ = {
@@ -279,6 +333,7 @@
 				9CE591A619D9615E00447DE2 /* Products */,
 				1E0184E240BD4734B431D8FA /* Frameworks */,
 				71BA571176C51B5BCAA0335D /* Pods */,
+				9C7F963719DB548900A933FA /* PlaningPoker-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +342,7 @@
 			children = (
 				9CE591A519D9615E00447DE2 /* KPPoker.app */,
 				9CE591BE19D9615E00447DE2 /* KPPokerTests.xctest */,
+				9C7F963619DB548800A933FA /* Planning Poker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +360,7 @@
 				3044ED1A879E0CE3213EB57D /* Screens */,
 				3044E6BC4095F3A749454897 /* Helpers */,
 				ACD098AC6E56C8F77E21DEB8 /* Data */,
+				3044E175D954A5D09B554D43 /* Fonts */,
 			);
 			path = KPPoker;
 			sourceTree = "<group>";
@@ -368,6 +425,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9C7F960C19DB548800A933FA /* Planning Poker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C7F963319DB548800A933FA /* Build configuration list for PBXNativeTarget "Planning Poker" */;
+			buildPhases = (
+				9C7F960D19DB548800A933FA /* Check Pods Manifest.lock */,
+				9C7F960E19DB548800A933FA /* Sources */,
+				9C7F962B19DB548800A933FA /* Frameworks */,
+				9C7F962D19DB548800A933FA /* Resources */,
+				9C7F963219DB548800A933FA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planning Poker";
+			productName = KPPoker;
+			productReference = 9C7F963619DB548800A933FA /* Planning Poker.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9CE591A419D9615E00447DE2 /* KPPoker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CE591C819D9615E00447DE2 /* Build configuration list for PBXNativeTarget "KPPoker" */;
@@ -414,6 +490,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Kotikan;
 				TargetAttributes = {
+					9C7F960C19DB548800A933FA = {
+						DevelopmentTeam = 8GFE4Z3QNZ;
+					};
 					9CE591A419D9615E00447DE2 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 8GFE4Z3QNZ;
@@ -439,17 +518,31 @@
 			targets = (
 				9CE591A419D9615E00447DE2 /* KPPoker */,
 				9CE591BD19D9615E00447DE2 /* KPPokerTests */,
+				9C7F960C19DB548800A933FA /* Planning Poker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9C7F962D19DB548800A933FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7F962E19DB548800A933FA /* Main.storyboard in Resources */,
+				9C7F962F19DB548800A933FA /* LaunchScreen.xib in Resources */,
+				9C7F963A19DB655000A933FA /* FrutigerLTStd-Light.otf in Resources */,
+				9C7F963019DB548800A933FA /* Images.xcassets in Resources */,
+				9C7F963119DB548800A933FA /* CardCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CE591A319D9615E00447DE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9CE591B419D9615E00447DE2 /* Main.storyboard in Resources */,
 				9CE591B919D9615E00447DE2 /* LaunchScreen.xib in Resources */,
+				9C7F963919DB653B00A933FA /* FrutigerLTStd-Light.otf in Resources */,
 				9CE591B619D9615E00447DE2 /* Images.xcassets in Resources */,
 				3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */,
 			);
@@ -465,6 +558,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9C7F960D19DB548800A933FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7F963219DB548800A933FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E00BCE86735F4582BE2EB737 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +621,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9C7F960E19DB548800A933FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7F960F19DB548800A933FA /* CardViewController.m in Sources */,
+				9C7F961019DB548800A933FA /* DismissSegue.m in Sources */,
+				9C7F961119DB548800A933FA /* AppDelegate.m in Sources */,
+				9C7F961219DB548800A933FA /* main.m in Sources */,
+				9C7F961319DB548800A933FA /* MainPresenter.m in Sources */,
+				9C7F961419DB548800A933FA /* MainViewController.m in Sources */,
+				9C7F961519DB548800A933FA /* CardCell.m in Sources */,
+				9C7F961619DB548800A933FA /* SettingsTableViewController.m in Sources */,
+				9C7F961719DB548800A933FA /* UIColor+helper.m in Sources */,
+				9C7F961819DB548800A933FA /* SettingsPresenter.m in Sources */,
+				9C7F961919DB548800A933FA /* SettingItem.m in Sources */,
+				9C7F961A19DB548800A933FA /* SessionItem.m in Sources */,
+				9C7F961B19DB548800A933FA /* UserItem.m in Sources */,
+				9C7F961C19DB548800A933FA /* SettingGroupItem.m in Sources */,
+				9C7F961D19DB548800A933FA /* Configuration.m in Sources */,
+				9C7F961E19DB548800A933FA /* Settings.m in Sources */,
+				9C7F961F19DB548800A933FA /* Card.m in Sources */,
+				9C7F962019DB548800A933FA /* Deck.m in Sources */,
+				9C7F962119DB548800A933FA /* Constants.m in Sources */,
+				9C7F962219DB548800A933FA /* ScoreTable.m in Sources */,
+				9C7F962319DB548800A933FA /* StoriesTable.m in Sources */,
+				9C7F962419DB548800A933FA /* SessionsTable.m in Sources */,
+				9C7F962519DB548800A933FA /* ScoreInteractor.m in Sources */,
+				9C7F962619DB548800A933FA /* CurrentStoryTable.m in Sources */,
+				9C7F962719DB548800A933FA /* SessionsInteractor.m in Sources */,
+				9C7F962819DB548800A933FA /* CurrentStoryInteractor.m in Sources */,
+				9C7F962919DB548800A933FA /* StoriesInteractor.m in Sources */,
+				9C7F962A19DB548800A933FA /* BaseCurrentStory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CE591A119D9615E00447DE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +733,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9C7F963419DB548800A933FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D7982789DF28AF2F97101D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"STAND_ALONE=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/PlaningPoker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PlanningPoker;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		9C7F963519DB548800A933FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"STAND_ALONE=1",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PlaningPoker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PlanningPoker;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
 		9CE591C619D9615E00447DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -592,7 +789,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J Thanyaluk (8GFE4Z3QNZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -609,7 +807,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -634,7 +832,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: J Thanyaluk (8GFE4Z3QNZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -645,7 +844,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
@@ -720,6 +919,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C7F963319DB548800A933FA /* Build configuration list for PBXNativeTarget "Planning Poker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7F963419DB548800A933FA /* Debug */,
+				9C7F963519DB548800A933FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CE591A019D9615E00447DE2 /* Build configuration list for PBXProject "KPPoker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
+#ifdef STAND_ALONE
     AWSCognitoCredentialsProvider *credentialsProvider = [AWSCognitoCredentialsProvider credentialsWithRegionType:AWSRegionUSEast1
                                                                                                         accountId:AWSAccountID
                                                                                                    identityPoolId:CognitoPoolID
@@ -31,10 +31,15 @@
     AWSServiceConfiguration *configuration = [AWSServiceConfiguration configurationWithRegion:AWSRegionUSEast1
                                                                           credentialsProvider:credentialsProvider];
     [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
-
-
+#endif
     self.window.backgroundColor = [UIColor whiteColor];
     [Configuration instance];
+    for (NSString* family in [UIFont familyNames]) {
+        NSLog(@"%@", family);
+        for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
+            NSLog(@"  %@", name);
+        }
+    }
     return YES;
 }
 

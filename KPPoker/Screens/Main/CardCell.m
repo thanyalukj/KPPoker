@@ -22,6 +22,7 @@
     self.layer.cornerRadius = 6;
     self.contentView.frame = self.bounds;
     self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _cardLabel.font = [UIFont fontWithName:@"FrutigerLTStd-Light" size:18];
 }
 
 - (void)setCard:(Card *)card deckType:(DeckType)deckType {

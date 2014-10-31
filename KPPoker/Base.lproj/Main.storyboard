@@ -3,6 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -17,6 +18,12 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rXs-oB-Dtd">
+                                <rect key="frame" x="0.0" y="400" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="zSO-En-D6x"/>
+                                </constraints>
+                            </imageView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-Wt-quy">
                                 <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -32,7 +39,7 @@
                             </tabBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-rC-uNS">
                                 <rect key="frame" x="0.0" y="64" width="600" height="486"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="PCc-Qa-aqz">
                                     <size key="itemSize" width="70" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -61,8 +68,11 @@
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9hI-NO-uf3"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="t7r-Wt-quy" secondAttribute="bottom" id="CnU-tG-zRZ"/>
                             <constraint firstItem="t7r-Wt-quy" firstAttribute="top" secondItem="xZr-rC-uNS" secondAttribute="bottom" constant="1" id="LQu-0w-GVm"/>
+                            <constraint firstItem="t7r-Wt-quy" firstAttribute="top" secondItem="rXs-oB-Dtd" secondAttribute="bottom" constant="1" id="Ulh-HZ-mLk"/>
                             <constraint firstAttribute="trailing" secondItem="t7r-Wt-quy" secondAttribute="trailing" id="dnq-Um-RxY"/>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="fro-7Q-Tt1"/>
+                            <constraint firstItem="rXs-oB-Dtd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="pyg-5Z-B9P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rXs-oB-Dtd" secondAttribute="trailing" constant="-16" id="scD-U8-cI5"/>
                             <constraint firstItem="t7r-Wt-quy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="skD-fJ-Djy"/>
                             <constraint firstItem="xZr-rC-uNS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="soS-81-lSV"/>
                             <constraint firstAttribute="trailing" secondItem="xZr-rC-uNS" secondAttribute="trailing" id="ul3-Dw-5c3"/>
@@ -208,6 +218,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="320" height="150"/>
         <image name="card_?" width="295" height="448"/>
         <image name="icon_cards" width="27" height="27"/>
         <image name="icon_fibonacci" width="27" height="27"/>

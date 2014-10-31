@@ -60,6 +60,11 @@
 }
 
 - (void)configureTabBar {
+#ifdef STAND_ALONE
+    NSMutableArray *items = [self.tabBar.items mutableCopy];
+    [items removeLastObject];
+    self.tabBar.items = items;
+#endif
     self.tabBar.delegate = self;
 }
 
