@@ -24,7 +24,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>FrutigerLTStd-Light.otf</string>
+		<string>FrutigerLTStd-Bold.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

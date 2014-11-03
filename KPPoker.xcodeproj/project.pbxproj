@@ -55,8 +55,8 @@
 		9C7F962F19DB548800A933FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B719D9615E00447DE2 /* LaunchScreen.xib */; };
 		9C7F963019DB548800A933FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B519D9615E00447DE2 /* Images.xcassets */; };
 		9C7F963119DB548800A933FA /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044EB3D1F02BE19311BD2FA /* CardCell.xib */; };
-		9C7F963919DB653B00A933FA /* FrutigerLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */; };
-		9C7F963A19DB655000A933FA /* FrutigerLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */; };
+		9C976AD91A08308F00BCE533 /* FrutigerLTStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C976AD81A08308F00BCE533 /* FrutigerLTStd-Bold.otf */; };
+		9C976ADA1A08308F00BCE533 /* FrutigerLTStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C976AD81A08308F00BCE533 /* FrutigerLTStd-Bold.otf */; };
 		9CE591AB19D9615E00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AA19D9615E00447DE2 /* main.m */; };
 		9CE591AE19D9615E00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE591AD19D9615E00447DE2 /* AppDelegate.m */; };
 		9CE591B419D9615E00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE591B219D9615E00447DE2 /* Main.storyboard */; };
@@ -123,9 +123,9 @@
 		3044EF5175638DD30148BB81 /* SettingGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroupItem.h; sourceTree = "<group>"; };
 		3044EF83E3667B44B3362E5E /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
 		4BB48A7DABD73A060E6E008E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		9C7F963619DB548800A933FA /* Planning Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planning Poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7F963619DB548800A933FA /* PlanningPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanningPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7F963719DB548900A933FA /* PlaningPoker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PlaningPoker-Info.plist"; path = "/Users/thanyaluk/Development/Xcode/personal/KPPoker/PlaningPoker-Info.plist"; sourceTree = "<absolute>"; };
-		9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Light.otf"; sourceTree = "<group>"; };
+		9C976AD81A08308F00BCE533 /* FrutigerLTStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Bold.otf"; sourceTree = "<group>"; };
 		9CE591A519D9615E00447DE2 /* KPPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE591A919D9615E00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE591AA19D9615E00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		3044E175D954A5D09B554D43 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9C7F963819DB653B00A933FA /* FrutigerLTStd-Light.otf */,
+				9C976AD81A08308F00BCE533 /* FrutigerLTStd-Bold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			children = (
 				9CE591A519D9615E00447DE2 /* KPPoker.app */,
 				9CE591BE19D9615E00447DE2 /* KPPokerTests.xctest */,
-				9C7F963619DB548800A933FA /* Planning Poker.app */,
+				9C7F963619DB548800A933FA /* PlanningPoker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,7 +441,7 @@
 			);
 			name = "Planning Poker";
 			productName = KPPoker;
-			productReference = 9C7F963619DB548800A933FA /* Planning Poker.app */;
+			productReference = 9C7F963619DB548800A933FA /* PlanningPoker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9CE591A419D9615E00447DE2 /* KPPoker */ = {
@@ -528,9 +528,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C976ADA1A08308F00BCE533 /* FrutigerLTStd-Bold.otf in Resources */,
 				9C7F962E19DB548800A933FA /* Main.storyboard in Resources */,
 				9C7F962F19DB548800A933FA /* LaunchScreen.xib in Resources */,
-				9C7F963A19DB655000A933FA /* FrutigerLTStd-Light.otf in Resources */,
 				9C7F963019DB548800A933FA /* Images.xcassets in Resources */,
 				9C7F963119DB548800A933FA /* CardCell.xib in Resources */,
 			);
@@ -540,9 +540,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C976AD91A08308F00BCE533 /* FrutigerLTStd-Bold.otf in Resources */,
 				9CE591B419D9615E00447DE2 /* Main.storyboard in Resources */,
 				9CE591B919D9615E00447DE2 /* LaunchScreen.xib in Resources */,
-				9C7F963919DB653B00A933FA /* FrutigerLTStd-Light.otf in Resources */,
 				9CE591B619D9615E00447DE2 /* Images.xcassets in Resources */,
 				3044ED94B9DE4D44AD105921 /* CardCell.xib in Resources */,
 			);
@@ -739,7 +739,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"STAND_ALONE=1",
@@ -748,6 +749,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = PlanningPoker;
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
@@ -758,7 +760,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"STAND_ALONE=1",
@@ -768,6 +771,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = PlanningPoker;
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;

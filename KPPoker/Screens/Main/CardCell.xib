@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,20 +14,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_small_coffee" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-ld-4j6">
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_small_tee" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-ld-4j6">
                         <rect key="frame" x="5" y="0.0" width="60" height="90"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-dp-A7c">
-                        <rect key="frame" x="28" y="33" width="14" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-dp-A7c">
+                        <rect key="frame" x="21" y="33" width="28" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="zRq-ld-4j6" firstAttribute="leading" secondItem="bxb-pY-n3Y" secondAttribute="leading" constant="5" id="AHk-wq-pXU"/>
+                <constraint firstAttribute="trailing" secondItem="V0X-dp-A7c" secondAttribute="trailing" constant="21" id="Gp0-GX-YgZ"/>
+                <constraint firstItem="V0X-dp-A7c" firstAttribute="leading" secondItem="bxb-pY-n3Y" secondAttribute="leading" constant="21" id="LHZ-xT-Hau"/>
                 <constraint firstAttribute="trailing" secondItem="zRq-ld-4j6" secondAttribute="trailing" constant="5" id="ZcZ-lr-f9Y"/>
                 <constraint firstItem="zRq-ld-4j6" firstAttribute="top" secondItem="bxb-pY-n3Y" secondAttribute="top" id="bZD-S8-ydG"/>
                 <constraint firstAttribute="centerX" secondItem="zRq-ld-4j6" secondAttribute="centerX" id="fp1-Cx-tjY"/>
@@ -44,6 +48,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="card_small_coffee" width="60" height="90"/>
+        <image name="card_small_tee" width="50" height="50"/>
     </resources>
 </document>
